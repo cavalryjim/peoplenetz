@@ -1,4 +1,6 @@
 Peoplenetz::Application.routes.draw do
+  resources :contacts
+
   get "pages/home"
 
   get "pages/specializ"

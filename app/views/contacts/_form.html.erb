@@ -1,0 +1,12 @@
+<%= simple_form_for(@contact, :html => {:class => 'form-horizontal' }) do |f| %>
+ 
+  <%= f.input :subject, :collection => [ "Sales", "Technical", "Partnership"] %>
+  <%= f.input :name, :required => true, :input_html => { :class => "span6"} %>
+  <%= f.input :email, :required => true, :input_html => { :class => "span6"} %>
+  <%= f.input :country, :priority => [ "United States", "Australia" ] %>
+  <%= f.input :message, :as => :text, :input_html => { :class => "span6"} %>
+  <div class="form-actions" style="background-color:#ffffff; border-top:none;">
+    <%= f.button :submit, "Submit Request", :class => 'btn-primary' %>
+  </div>
+  
+<% end %>

@@ -1,0 +1,15 @@
+<p>Name: <%= @contact.name %></p>
+
+<p>Email: <%= @contact.email %></p>
+
+<% if @contact.subject %>
+<p>Country: <%= @contact.country %></p>
+<% end %>
+
+<% if @contact.subject %>
+<p>Subject: <%= @contact.subject %></p>
+<% end %>
+
+<% if @contact.message %>
+  <p>Message: <%= @contact.message %></p>
+<% end %>

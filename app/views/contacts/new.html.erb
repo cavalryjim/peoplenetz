@@ -1,0 +1,49 @@
+
+<div class="row-fluid">
+  <div class="span12">
+	<%= image_tag 'banner-contact.png' %>
+  </div>
+</div> <!--/row -->
+
+<div class="row-fluid">
+  <div class="span9">
+	<h3>Information Request</h3>
+	<p>Have a question?  We would like to hear from you.</p>
+  	<% flash.each do |key, value| %>
+      <div class="alert alert-success">
+		<button class="close" data-dismiss="alert">×</button>
+		<strong><%= value %></strong>
+	  </div>
+    <% end %>
+	<%= render 'form' %>
+	
+  </div>
+
+  <div class="span3">
+	<div class="row">
+	  <div class="well sidebar-nav">
+	    <h3>Contact</h3>
+	    <ul class="unstyled">
+		  <li>Peoplenetz, LLC</li>
+		  <li>7117 Florida Blvd</li>
+		  <li>Baton Rouge, LA 70815</li>
+		  <li>(800) 757-1237</li>
+		  <li>(225) 612-2142</li>
+		  <li><%= link_to "sales@peoplenetz.com", "mailto:sales@peoplenetz.com"  %></li>
+	    </ul>
+	  </div>
+	</div> <!-- row -->
+	<div class="row">
+	  <div class="well sidebar-nav">
+	    <h3>Technical Support</h3>
+	    <!-- BEGIN ProvideSupport.com Graphics Chat Button Code -->
+		<div id="ciWMjj" style="z-index:100;position:absolute;"></div><div id="scWMjj" style="display:inline"></div><div id="sdWMjj" style="display:none"></div><script type="text/javascript">var seWMjj=document.createElement("script");seWMjj.type="text/javascript";var seWMjjs=(location.protocol.indexOf("https")==0?"https":"https")+"://image.providesupport.com/js/peoplenetz/safe-standard.js?ps_h=WMjj&ps_t="+new Date().getTime();setTimeout("seWMjj.src=seWMjjs;document.getElementById('sdWMjj').appendChild(seWMjj)",1)</script><noscript><div style="display:inline"><a href="https://www.providesupport.com?messenger=peoplenetz">Live Help Chat</a></div></noscript>
+		<!-- END ProvideSupport.com Graphics Chat Button Code -->
+		<ul class="unstyled">
+		  <li><%= link_to "support@peoplenetz.com", "mailto:support@peoplenetz.com"  %></li>
+	    </ul>
+		
+	  </div>
+	</div> <!-- row -->
+  </div> <!-- span -->
+</div>
