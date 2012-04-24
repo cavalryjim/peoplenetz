@@ -6,6 +6,7 @@ gem 'jquery-rails', '~> 2.0.0'
 group :development do
   gem 'mysql2', '0.3.11'
   gem 'rspec-rails', '2.9.0'
+  gem 'thin', '~> 1.3.1'
 
 end
 
