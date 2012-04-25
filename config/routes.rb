@@ -8,14 +8,6 @@ Peoplenetz::Application.routes.draw do
   match '/libraries', :to => 'pages#libraries'
   match '/build_case', :to => 'pages#build_case'
   match '/about', :to => 'pages#about'
-  get "pages/home"
-  get "pages/specializ"
-  get "pages/industries"
-  get "pages/solutions"
-  get "pages/libraries"
-  get "pages/build_case"
-  get "pages/about"
-  get "pages/contact"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
