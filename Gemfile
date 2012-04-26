@@ -5,6 +5,7 @@ gem 'jquery-rails', '~> 2.0.0'
 gem 'thin', '~> 1.3.1'
 gem 'simple_form', '~> 2.0.1'
 gem 'country_select', '~> 0.0.2'
+gem 'copycopter_client', '2.0.0'
 
 group :development do
   gem 'mysql2', '0.3.11'
