@@ -1,2 +1,25 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+
+<div class="row-fluid">
+  <div class="span9">
+    <p>
+<%= t "about.para1", default: "Peoplenetz offers a broad array of tightly integrated products designed to help organizations run more efficiently and make the most of their human capital and available corporate data. We help organizations increase their performance by providing solutions that capitalize on knowledge generation, knowledge management and knowledge networks. The unifying theme of all of our applications is simplicity; we believe if software may only be productive if it is easy to use. Let us show you how." %>
+	</p>
+  </div>
+
+  <div class="span3">
+	<div class="row">
+	  <div class="well sidebar-nav">
+	    <h3>Management</h3>
+	    <p>
+<%= t "about.management", default: "Members of Peoplenetz management have years of expertise on both the functional and technical sides of enterprise organizational management. We work hard to provide unique quantitative solutions to common organizational problems in simple, understandable user interfaces. Our software is flexible in its design to meet the unique requirements of indiviudal organization even within a software as a service (SaaS) environment." %>
+		</p>
+	  </div> <!-- .well -->
+    </div>
+	<div class="row"> 
+	  <div class="well sidebar-nav">
+		<h3>Software Development</h3>
+<%= t "about.developers", default: "The software development team at Peoplenetz has years of experience working on enterprise level applications. They have specialzed in building software that manages vast amounts of data. Our development team not only has expertise Java, Flex, Flash and Ruby on Rails but also has the statistical expertise to provide organiations with unparalleled analytic capabilities without complication." %>
+	  </div> <!-- .well -->
+	</div>
+  </div> <!-- /span -->
+</div>

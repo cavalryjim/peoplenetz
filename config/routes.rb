@@ -1,4 +1,6 @@
 Peoplenetz::Application.routes.draw do
+  resources :cases
+
   resources :contacts
 
   match '/home', :to => 'pages#home'

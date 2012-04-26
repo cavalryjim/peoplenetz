@@ -1,0 +1,15 @@
+<%= simple_form_for(@case, :html => {:class => 'form-horizontal' }) do |f| %>
+  <%=# f.error_notification 
+  %>
+
+  <div class="form-inputs">
+    <%= f.input :industry, :collection => [ "Financial", "Consulting", "Manufacturing", "Marketing", "Academics"] %>
+    <%= f.input :org_size, :collection => [ "under 100", "100 - 500", "500 - 5,000", "over 5,000"] %>
+    <%= f.input :country, :priority => [ "United States", "Australia" ]  %>
+    <%= f.input :email %>
+  </div>
+
+  <div class="form-actions" style="background-color:#ffffff; border-top:none;">
+    <%= f.button :submit, :class => 'btn-primary' %>
+  </div>
+<% end %>

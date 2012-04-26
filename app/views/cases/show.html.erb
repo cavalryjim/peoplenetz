@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Industry:</b>
+  <%= @case.industry %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @case.org_size %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @case.country %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @case.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_case_path(@case) %> 
+
