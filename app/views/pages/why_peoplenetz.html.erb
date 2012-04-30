@@ -1,4 +1,3 @@
-<% content_for :title, "Contact Us" %>
 <div class="row-fluid">
   <div class="span12">
 	<%= image_tag 'banner-contact.png' %>
@@ -7,15 +6,7 @@
 
 <div class="row-fluid">
   <div class="span9">
-	<h3><%= t "contact.header", default: "Information Request" %></h3>
-	<p><%= t "contact.under_header", default: "Have a question?  We would like to hear from you." %></p>
-  	<% flash.each do |key, value| %>
-      <div class="alert alert-success">
-		<button class="close" data-dismiss="alert">×</button>
-		<strong><%= value %></strong>
-	  </div>
-    <% end %>
-	<%= render 'form' %>
+	<p>Have a question?  We would like to hear from you.</p>
 	
   </div>
 
@@ -24,11 +15,11 @@
 	  <div class="well sidebar-nav">
 	    <h3>Contact</h3>
 	    <ul class="unstyled">
-		  <li><%= t "contact.address_name", default: "Peoplenetz, LLC" %></li>
-		  <li><%= t "contact.address_street", default: "7117 Florida Blvd" %></li>
-		  <li><%= t "contact.address_city", default: "Baton Rouge, LA 70815" %></li>
-		  <li><%= t "contact.address_phone1", default: "(800) 757-1237" %></li>
-		  <li><%= t "contact.address_phone2", default: "(225) 612-2142" %></li>
+		  <li>Peoplenetz, LLC</li>
+		  <li>7117 Florida Blvd</li>
+		  <li>Baton Rouge, LA 70815</li>
+		  <li>(800) 757-1237</li>
+		  <li>(225) 612-2142</li>
 		  <li><%= link_to "sales@peoplenetz.com", "mailto:sales@peoplenetz.com"  %></li>
 	    </ul>
 	  </div>
