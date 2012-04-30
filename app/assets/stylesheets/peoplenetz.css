@@ -1,0 +1,34 @@
+    html { overflow-x: hidden; }
+    .span-window { 
+      background: black;
+      color: white;
+      padding: 0px 0;
+      position: relative;
+    }
+    .span-window:before, .span-window:after {
+      content: "";
+      background: black;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 9999px;
+    }
+    .span-window:before {
+      right: 100%;
+    }
+    .span-window:after {
+      left: 100%;
+    }
+    /*
+    .span-window:nth-of-type(1), .span-window:nth-of-type(1):before, .span-window:nth-of-type(1):after { background: #dc4916; }
+    .span-window:nth-of-type(2), .span-window:nth-of-type(2):before, .span-window:nth-of-type(2):after { background: #6871b1; }
+    .span-window:nth-of-type(3), .span-window:nth-of-type(3):before, .span-window:nth-of-type(3):after { background: #d1b935; }
+    */
+    .left-only:after {
+      display: none;
+    }
+    
+    .right-only:before {
+      width: 20px;
+    }
+
