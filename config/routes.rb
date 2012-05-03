@@ -1,4 +1,10 @@
 Peoplenetz::Application.routes.draw do
+  resources :solutions
+
+  resources :libraries
+
+  resources :industries
+
   resources :cases
 
   resources :contacts

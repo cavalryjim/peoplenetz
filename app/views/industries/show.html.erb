@@ -1,0 +1,22 @@
+<% content_for :title, @industry %>
+<div class="row-fluid">
+  <div class="span12">
+	<%= image_tag 'banner-peoplenetz.png' %>
+  </div>
+</div> <!--/row -->
+
+<p>
+  <b>Name:</b>
+  <%= @industry.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @industry.description %>
+</p>
+
+<p>
+  <b>Pnetz solution:</b>
+  <%= @industry.pnetz_solution %>
+</p>
+
