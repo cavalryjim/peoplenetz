@@ -23,6 +23,9 @@
     <%= render 'layouts/header' %>
 
     <div class="container">
+	  <p class="notice"><%= notice %></p> <!-- JDavis: this is for active_admin.  Might want to move this. -->
+      <p class="alert"><%= alert %></p> <!-- JDavis: this is for active_admin.  Might want to move this. -->
+
       <div class="content">
 		<%= yield %>
       </div><!--/content-->
