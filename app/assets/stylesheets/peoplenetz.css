@@ -51,6 +51,11 @@ h2.pnetz {
 	border-bottom: 1px solid #3F3F3F;
 }
 
+.form-button {
+	background-color:transparent; 
+	border-top:none;
+}
+
 div#sitemap {
 	margin: 10px auto 10px auto;
 	height: 250px;
