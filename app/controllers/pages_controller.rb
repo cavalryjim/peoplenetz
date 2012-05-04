@@ -38,4 +38,12 @@ class PagesController < ApplicationController
   def services
     
   end
+  
+  def sales
+    
+  end
+  
+  def careers
+    
+  end
 end

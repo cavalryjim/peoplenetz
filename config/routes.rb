@@ -4,13 +4,9 @@ Peoplenetz::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   resources :solutions
-
   resources :libraries
-
   resources :industries
-
   resources :cases
-
   resources :contacts
 
   match '/home', :to => 'pages#home'
@@ -22,6 +18,9 @@ Peoplenetz::Application.routes.draw do
   match '/about', :to => 'pages#about'
   match '/why_peoplenetz', :to => 'pages#why_peoplenetz'
   match '/services', :to => 'pages#services'
+  match '/sales', :to => 'pages#sales'
+  match '/help', :to => 'pages#help'
+  match '/careers', :to => 'pages#careers'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
