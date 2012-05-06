@@ -5,18 +5,37 @@
   </div>
 </div> <!--/row -->
 
-<p>
-  <b>Name:</b>
-  <%= @industry.name %>
-</p>
+<div class="row-fluid">
+  <div class="span9">
+	<p>
+	  <b>Name:</b>
+	  <%= @industry.name %>
+	</p>
+	
+	<p>
+	  <b>Description:</b>
+	  <%= @industry.description %>
+	</p>
+	
+	<p>
+	  <b>Pnetz solution:</b>
+	  <%= @industry.pnetz_response %>
+	</p>
+  </div>
+  
+  <div class="span3">
+	<div class="row">
+	  <div class="well">
+		<h4>Industries</h4>
+	    <ul class="fonts-sitemap">
+		  <% Industry.all.each do |industry| %>
+			<li><%= link_to industry.name, industry %></li>
+		  <% end %>	
+		</ul>
+	  </div> <!-- .well -->
+	</div>
+  </div>
 
-<p>
-  <b>Description:</b>
-  <%= @industry.description %>
-</p>
 
-<p>
-  <b>Pnetz solution:</b>
-  <%= @industry.pnetz_response %>
-</p>
+</div>
 
