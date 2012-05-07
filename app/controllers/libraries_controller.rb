@@ -14,6 +14,7 @@ class LibrariesController < ApplicationController
   # GET /libraries/1.json
   def show
     @library = Library.find(params[:id])
+    @library_topic = @library.library_topics.first
 
     respond_to do |format|
       format.html # show.html.erb

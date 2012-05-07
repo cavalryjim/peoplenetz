@@ -4,7 +4,9 @@ Peoplenetz::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   resources :solutions
-  resources :libraries
+  resources :libraries do 
+    resources :library_topics
+  end
   resources :industries
   resources :cases
   resources :contacts

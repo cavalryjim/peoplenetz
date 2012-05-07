@@ -7,17 +7,27 @@
 
 <div class="row-fluid">
   <div class="span9">
-	<p>
-	  <b>Name:</b>
+	<h3>
 	  <%= @library.name %>
-	</p>
-	
-	<p>
-	  <b>Description:</b>
-	  <%= @library.description %>
-	</p>
-  </div>
+	</h3>
 
+	<p>
+Peoplenetz® Specializ® software lets you communicate easier, faster, and better with PDF. Increase your productivity by editing and reusing content, streamlining reviews, and quickly creating fillable PDF forms.
+	</p>
+
+    <div class="row-fluid">
+	  <div id="topic_content" class="span6">
+		<%= render 'topic_content' %>
+	  </div>
+	  <div class="span3 library_topics">
+		<ul class="fonts-sitemap">
+		  <% @library.library_topics.each do |topic| %>
+			<li><%= link_to topic.title, library_library_topic_path(@library, topic)+".json", :remote => true %></li>
+		  <% end %>	
+		</ul>
+	  </div>
+	</div>
+  </div>
 
   <div class="span3">
 	<div class="row">

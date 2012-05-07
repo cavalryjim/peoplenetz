@@ -13,5 +13,22 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require jquery.nivo.slider.pack
+//= require jquery.nivo.slider.pack							
 //= require_tree .
+
+$(function() {
+  $(".library_topics a").live("click", function() {
+	//alert(this.href);
+    //$.getScript(this.href);
+    $.ajax({
+		url: this.href,
+		context: document.body,
+		dataType: "html",					
+		success: function(data){
+			//alert(data);
+			$('#topic_content').html(data);
+		}
+	});
+    return false;
+  });
+}); 
