@@ -4,6 +4,7 @@ ActiveAdmin.register LibraryTopic do
     column :title do |topic|
       link_to topic.title, edit_admin_library_topic_path(topic)
     end
+    column :position
     column :content do |topic|
       topic.content.html_safe
     end

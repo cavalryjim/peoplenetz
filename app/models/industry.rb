@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: industries
+#
+#  id             :integer(4)      not null, primary key
+#  name           :string(255)
+#  description    :text
+#  pnetz_response :text
+#  created_at     :datetime        not null
+#  updated_at     :datetime        not null
+#
+
 class Industry < ActiveRecord::Base
   attr_accessible :description, :name, :pnetz_response
   

@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: libraries
+#
+#  id          :integer(4)      not null, primary key
+#  name        :string(255)
+#  description :text
+#  created_at  :datetime        not null
+#  updated_at  :datetime        not null
+#
+
 class Library < ActiveRecord::Base
   has_many :library_topics
   

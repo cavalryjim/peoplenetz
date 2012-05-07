@@ -12,6 +12,7 @@ gem 'formtastic', '~> 2.1.1'
 group :development do
   gem 'mysql2', '0.3.11'
   gem 'rspec-rails', '2.9.0'
+  gem 'annotate', '~> 2.4.1.beta'
 
 end
 
