@@ -14,7 +14,7 @@
   	  <%= @library.description.html_safe %>
 	</div>
 	
-
+   <% if @library_topic %>
     <div class="row-fluid">
 	  <div id="topic_content" class="span9">
 		<%= render 'topic_content' %>
@@ -29,6 +29,7 @@
 		</div>
 	  </div>
 	</div>
+   <% end %>
   </div>
 
   <div class="span2">
