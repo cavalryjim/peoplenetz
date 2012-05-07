@@ -1,0 +1,6 @@
+<% if @industry_topic %>
+  <h4 id="topic_content_title"><%= @industry_topic.title %></h4>
+  <div id='topic_content'>
+    <%= @industry_topic.content.html_safe %>
+  </div>
+<% end %>

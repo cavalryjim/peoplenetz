@@ -14,6 +14,7 @@ class SolutionsController < ApplicationController
   # GET /solutions/1.json
   def show
     @solution = Solution.find(params[:id])
+    @solution_topic = @solution.solution_topics.order(:position).first
 
     respond_to do |format|
       format.html # show.html.erb

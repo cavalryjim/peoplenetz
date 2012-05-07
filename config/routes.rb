@@ -1,13 +1,18 @@
 Peoplenetz::Application.routes.draw do
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :solutions
+  resources :solutions do
+    resources :solution_topics
+  end
   resources :libraries do 
     resources :library_topics
   end
-  resources :industries
+  resources :industries do
+    resources :industry_topics
+  end
   resources :cases
   resources :contacts
 

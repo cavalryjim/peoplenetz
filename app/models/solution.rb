@@ -11,6 +11,8 @@
 #
 
 class Solution < ActiveRecord::Base
+  has_many :solution_topics
+  
   attr_accessible :description, :name, :pnetz_solution
 
   validates :name,  :presence       => true,

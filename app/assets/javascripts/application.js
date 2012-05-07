@@ -17,7 +17,7 @@
 //= require_tree .
 
 $(function() {
-  $(".library_topics a").live("click", function() {
+  $(".sub_topics a").live("click", function() {
     //$.getScript(this.href);
 	header = this.text;
     $.ajax({

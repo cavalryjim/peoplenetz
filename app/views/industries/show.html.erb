@@ -6,36 +6,70 @@
 </div> <!--/row -->
 
 <div class="row-fluid">
-  <div class="span9">
-	<p>
-	  <b>Name:</b>
-	  <%= @industry.name %>
-	</p>
-	
-	<p>
-	  <b>Description:</b>
-	  <%= @industry.description %>
-	</p>
-	
-	<p>
-	  <b>Pnetz solution:</b>
-	  <%= @industry.pnetz_response %>
-	</p>
-  </div>
-  
-  <div class="span3">
-	<div class="row">
-	  <div class="well">
-		<h4>Industries</h4>
-	    <ul class="fonts-sitemap">
-		  <% Industry.all.each do |industry| %>
-			<li><%= link_to industry.name, industry %></li>
-		  <% end %>	
-		</ul>
-	  </div> <!-- .well -->
+  <div class="span10">
+	<div class="row-fluid">
+      <h3>
+	    <%= @industry.name %>
+	  </h3>
+  	  <%= @industry.description.html_safe %>
 	</div>
+	
+   <% if @industry_topic %>
+    <div class="row-fluid">
+	  <div class="span9">
+		<%= render 'topic_content' %>
+	  </div>
+	  <div class="span3 ">
+  		<div class="well sub_topics" style="padding:5px">
+		  <ul class="fonts-sitemap">
+		    <% @industry.industry_topics.order(:position).each do |topic| %>
+			  <li><%= link_to topic.title, industry_industry_topic_path(@industry, topic)+".json", :remote => true, :value => 'jdtest' %></li>
+		    <% end %>	
+		  </ul>
+		</div>
+	  </div>
+	</div>
+   <% end %>
   </div>
 
-
+  <div class="span2">
+	<div class="accordion" id="accordion2">
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+            Case Studies
+          </a>
+        </div>
+        <div id="collapseOne" class="accordion-body collapse in">
+          <div class="accordion-inner">
+            This will contain a list of pdf files
+          </div>
+        </div>
+      </div>
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+            Brochures
+          </a>
+        </div>
+        <div id="collapseTwo" class="accordion-body collapse">
+          <div class="accordion-inner">
+            This will contain a list of brochures
+          </div>
+        </div>
+      </div>
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+            Presentations
+          </a>
+        </div>
+        <div id="collapseThree" class="accordion-body collapse">
+          <div class="accordion-inner">
+            list of presentation
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-

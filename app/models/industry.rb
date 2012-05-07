@@ -11,6 +11,8 @@
 #
 
 class Industry < ActiveRecord::Base
+  has_many :industry_topics
+  
   attr_accessible :description, :name, :pnetz_response
   
   validates :name,  :presence       => true,

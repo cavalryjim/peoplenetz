@@ -14,6 +14,7 @@ class IndustriesController < ApplicationController
   # GET /industries/1.json
   def show
     @industry = Industry.find(params[:id])
+    @industry_topic = @industry.industry_topics.order(:position).first
 
     respond_to do |format|
       format.html # show.html.erb
