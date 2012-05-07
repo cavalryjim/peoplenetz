@@ -1,3 +1,6 @@
 <% if @library_topic %>
-  <%= @library_topic.content.html_safe %>
+  <h4 id="topic_content_title"><%= @library_topic.title %></h4>
+  <div id='topic_content'>
+    <%= @library_topic.content.html_safe %>
+  </div>
 <% end %>

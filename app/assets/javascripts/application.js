@@ -18,15 +18,15 @@
 
 $(function() {
   $(".library_topics a").live("click", function() {
-	//alert(this.href);
     //$.getScript(this.href);
+	header = this.text;
     $.ajax({
 		url: this.href,
 		context: document.body,
 		dataType: "html",					
 		success: function(data){
-			//alert(data);
 			$('#topic_content').html(data);
+			$('#topic_content_title').text(header);
 		}
 	});
     return false;
