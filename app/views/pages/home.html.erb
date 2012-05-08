@@ -73,7 +73,7 @@
 	<div id="smwrapper">
 		<div id="sm1"><h1 class="fonts-sitemap-title">Libraries</h1>
 			<ul class="fonts-sitemap">
-			  <% Library.all.each do |library| %>
+			  <% Library.all(:order => "name").each do |library| %>
 				<li><%= link_to library.name, library %></li>
 			  <% end %>	
 			</ul>
