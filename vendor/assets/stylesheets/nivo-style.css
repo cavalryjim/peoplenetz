@@ -9,8 +9,8 @@
 .theme-default #slider {
     margin:10px auto;
     margin-bottom:15px;
-    width:930px; /* Make sure your images are the same size */
-    height:170px; /* Make sure your images are the same size */
+    width:768px; /* Make sure your images are the same size */
+    height:225px; /* Make sure your images are the same size */
 }
 .theme-pascal.slider-wrapper,
 .theme-orman.slider-wrapper {
