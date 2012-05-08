@@ -1,5 +1,6 @@
-html, body, .navbar {
-    background-color: #F5F5F5 !important;
+html, body {
+    background-color: #272727 !important;
+    color: #FFFFFF;
 }
 
 h2.pnetz {
@@ -14,6 +15,7 @@ h2.pnetz {
 	width: 1024px;
 	min-width: 1024px;
 	display: block;
+	background-color: #272727 !important;
 }
 
 #social a img {
@@ -22,33 +24,97 @@ h2.pnetz {
 
 
 #awesometagline {
-	text-align:center;
-    background-color: #161616;
-    border-top: 1px solid #3F3F3F;
-    height: 120px;
-    margin-bottom: 10px;
-    min-width: 1024px;
-    width: 100%;
+	margin-bottom: 10px;
+	height: 120px;
+	width: 100%;
+	min-width: 1024px;
+	background-color: #dddddd;
+	border-top: 1px solid #D0D0D0;
 }
 
 #awesometagline a {
-    background-color: transparent;
-    color: #F0F0F0;
-    display: block;
-    font-family: arial;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    width: 1024px;
+	width: 1024px;
+	background-color: transparent;
+	font-family: arial;
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	line-height: 120px;
+	vertical-align: middle;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #000000;
+}
+
+#homepageicons {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 80px;
+	width: 1024px;
+	background-color: transparent;
+	white-space:nowrap;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hpbox {
+	color: #FFFFFF;
+	position: relative;
+	
+	display: inline-block;
+	
+}
+
+.hpbox h2, .hpbox img {
+	position: relative;
+	float: left;
+	background-color: transparent;
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: middle;
+	color: #00B8E6;
+}
+
+.hpbox a {
+	position: relative;
+	float: left;
+
+	background-color: transparent;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: none;
+	text-decoration: none;
+	text-align: left;
+	vertical-align: middle;
+	color: #e5e5e5;
 }
 
 .navbar {
-	border-bottom: 1px solid #3F3F3F;
+	border-bottom: 1px solid #D0D0D0;
+	background-color: #272727;
+}
+
+.navbar-inner {
+	background-color: #dddddd;
+	background-image: none;
+	color: #000000;
+}
+.navbar .nav > li > a {
+	color: #000000 !important;
+}
+
+.navbar .nav > li > a:hover {
+    background-color: transparent;
+    color: blue !important;
+    text-decoration: none;
+}
+
+.navbar .brand:hover {
+	background-color: #D8D8D8;
 }
 
 .form-button {
@@ -57,15 +123,19 @@ h2.pnetz {
 }
 
 div#sitemap {
-	margin: 10px auto 10px auto;
+	margin: 10 auto 10 auto;
 	height: 250px;
 	width: 100%;
 	min-width: 1024px;
-	background-color: #E6E6E6;
+	background-color: #1A1A1A;
+	color: #FFFFFF;
+}
+
+div#sitemap a {
+	color: #FFFFFF;
 }
 
 #smwrapper {
-
 	margin-left:auto;
 	margin-right:auto;
 	height: 250px;
@@ -113,24 +183,40 @@ div#sitemap {
 	padding-left: 7px;
 }
 
+#smwrapper ul, #smwrapper ol {
+	margin: 0 !important;
+	list-style-type: none;
+}
+
+#smwrapper li {
+	line-height: 16px;
+}
+
+div#footer {
+	float: right;
+	text-align: right;
+	color: #232323;
+	font-weight: bold;
+	font-size: 10px;
+	padding: 2px 4px 2px 0px;
+	height: 14px;
+	width: 1020px;
+	max-width: 1020px;
+}
+
 .fonts-sitemap-title {
 	font-family: arial;
 	font-size: 12px;
 	font-style: italic;
 	text-align: left;
-	color: #232323;
+	color: #00CCFF;
 }
 
 .fonts-sitemap {
 	font-family: arial;
 	font-size: 10px;
-	list-style: none;
 }
 
-#smwrapper ul, #smwrapper ol {
-	margin: 0 !important;
-}
-
-#smwrapper li {
-	line-height: 16px;
+footer {
+	color: #FFFFFF;
 }

@@ -2,16 +2,19 @@
 </div><!-- content -->
 </div><!-- /container -->
 
-<div style="background-color:#000000;">
+<div style="background-color:#F5F5F5;">
 
   <div class="container">
 	<div class="slider-wrapper theme-default">
       <div class="ribbon"></div>
       <div id="slider" class="nivoSlider">
-		<%= image_tag "slider_images/toystory.jpg" %>
-        <%= image_tag "slider_images/up.jpg" %>
-        <%= image_tag "slider_images/walle.jpg" %>
-        <%= image_tag "slider_images/nemo.jpg" %>
+		<%= image_tag "slider_images/header1_sm.jpg", :title => "This is an example of a caption" %>
+        <%= image_tag "slider_images/header2_sm.jpg", :title => "#htmlcaption" %>
+        <%= image_tag "slider_images/header3_sm.jpg" %>
+        <%= image_tag "slider_images/header4_sm.jpg" %>
+      </div>
+	  <div id="htmlcaption" class="nivo-html-caption">
+        This is an example of a caption with <a href="#">a link</a>.
       </div>
     </div>
   </div>
@@ -32,32 +35,41 @@
   <div class="content">
 	<div class="row">
 	  <div class="span4">
-	    <h2><%= image_tag 'elephant.png' %>Faster</h2>
+	   <div class="hpbox">
+		<%= image_tag 'elephant.png' %>
+	    <h2>Faster</h2></br></br>
 	    <p><%= t "home.faster", default: "Quickly locate the subject matter expertise within an organization and then use our products to bring any portion of employees or consultants to a consensus agreement.  Accomplish more in less time."%> </p>
 	    <p>
 		  <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
 		</p>
+	   </div>
 	  </div>
 	  <div class="span4">
-	    <h2><%= image_tag 'elephant.png' %>Better</h2>
+	   <div class="hpbox">
+		<%= image_tag 'elephant.png' %>
+	    <h2>Better</h2></br></br>
 	    <p><%= t "home.better", default: "Tired of rework? Get the requirements right along with a guaranteed level of agreement from stakeholders with Specializ." %> </p>
 	    <p>
 		  <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
 		</p>
+	   </div>
 	  </div>
 	  <div class="span4">
-	    <h2><%= image_tag 'elephant.png' %>Cheaper</h2>
+	   <div class="hpbox">
+		<%= image_tag 'elephant.png' %>
+	    <h2>Cheaper</h2></br></br>
 	    <p><%= t "home.cheaper", default: "Spending too much getting your projects started? Gather information from stakeholders while spending less money." %></p>
 	    <p>
 		  <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
 		</p>
+       </div>
 	  </div>
 	</div>
   </div>
 </div>
 
-<div style="background-color:#D8D8D8;">
-  <div id="sitemap">
+
+<div id="sitemap">
 	<div id="smwrapper">
 		<div id="sm1"><h1 class="fonts-sitemap-title">Libraries</h1>
 			<ul class="fonts-sitemap">
@@ -110,7 +122,6 @@
 			</ul>
 		</div>
 	</div>
-  </div>
 </div>
 
 <div class="container">
