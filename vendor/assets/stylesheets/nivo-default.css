@@ -26,9 +26,10 @@ Author URI: http://dev7studios.com
 }
 
 .theme-default .nivo-controlNav {
+	display:none; /* JDavis: displaying the nav does not add to the site */
 	position:absolute;
 	left:50%;
-	bottom:-20px; /* JDavis: this moves the control up & down */
+	bottom:0px; /* JDavis: this moves the control up & down */
     margin-left:-40px; /* JDavis: tweak this to center bullets */
 }
 .theme-default .nivo-controlNav a {
@@ -65,9 +66,10 @@ Author URI: http://dev7studios.com
     font-family: Helvetica, Arial, sans-serif;
 }
 .theme-default .nivo-caption a {
-    color:#fff;
-    border-bottom:1px dotted #fff;
+    color:#000;
+    /*border-bottom:1px dotted #000;*/
 }
 .theme-default .nivo-caption a:hover {
-    color:#fff;
+    color:#000;
+    background-color:#fff;
 }

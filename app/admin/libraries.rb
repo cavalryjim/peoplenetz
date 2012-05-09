@@ -6,7 +6,7 @@ ActiveAdmin.register Library do
     end
     column :description
     column :delete do |library|
-      link_to image_tag('cross.png'), admin_library_path(library), :confirm => "Select 'OK' to delete.", :method => :delete
+      link_to image_tag('icons/cross.png'), admin_library_path(library), :confirm => "Select 'OK' to delete.", :method => :delete
     end
   end
 end

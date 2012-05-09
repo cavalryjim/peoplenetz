@@ -7,7 +7,7 @@ ActiveAdmin.register Solution do
     column :description
     column :pnetz_solution
     column :delete do |solution|
-      link_to image_tag('cross.png'), admin_solution_path(solution), :confirm => "Select 'OK' to delete.", :method => :delete
+      link_to image_tag('icons/cross.png'), admin_solution_path(solution), :confirm => "Select 'OK' to delete.", :method => :delete
     end
   end
 end

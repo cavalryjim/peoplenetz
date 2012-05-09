@@ -9,7 +9,7 @@ ActiveAdmin.register LibraryTopic do
       topic.content.html_safe
     end
     column :delete do |topic|
-      link_to image_tag('cross.png'), admin_library_topic_path(topic), :confirm => "Select 'OK' to delete.", :method => :delete
+      link_to image_tag('icons/cross.png'), admin_library_topic_path(topic), :confirm => "Select 'OK' to delete.", :method => :delete
     end
   end
 end

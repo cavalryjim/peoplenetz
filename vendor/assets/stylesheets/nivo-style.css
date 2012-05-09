@@ -7,10 +7,10 @@
 
 
 .theme-default #slider {
-    margin:10px auto;
-    margin-bottom:15px;
-    width:768px; /* Make sure your images are the same size */
-    height:225px; /* Make sure your images are the same size */
+    margin:0px auto;
+    margin-bottom:0px;
+    width:922px; /* Make sure your images are the same size */
+    height:270px; /* Make sure your images are the same size */
 }
 .theme-pascal.slider-wrapper,
 .theme-orman.slider-wrapper {
