@@ -191,7 +191,7 @@ div#sitemap a {
 #smwrapper li {
 	line-height: 16px;
 }
-
+/*
 div#footer {
 	float: right;
 	text-align: right;
@@ -203,6 +203,7 @@ div#footer {
 	width: 1020px;
 	max-width: 1020px;
 }
+*/
 
 .fonts-sitemap-title {
 	font-family: arial;
@@ -218,5 +219,6 @@ div#footer {
 }
 
 footer {
-	color: #FFFFFF;
+	color: #808080;
+	font-size: 8pt;
 }
