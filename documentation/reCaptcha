@@ -1,0 +1,10 @@
+Domain Name: 	peoplenetz.com
+
+This is a global key. It will work across all domains.
+Public Key: 	6Lf3ctESAAAAAF6fo8dCdbBVfKDS0Q8U6V_S4U7Y
+
+Use this in the JavaScript code that is served to your users
+Private Key: 	6Lf3ctESAAAAAI3OTeffMV4We0jgXzut3OIu1hfS
+
+Use this when communicating between your server and our server. Be sure to keep it a secret.
+

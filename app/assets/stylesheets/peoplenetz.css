@@ -122,6 +122,11 @@ h2.pnetz {
 	border-top:none;
 }
 
+.simple_form input, select, textarea {
+	background-color: #202020;
+	color: #FFFFFF;
+}
+
 div#sitemap {
 	margin: 10 auto 10 auto;
 	height: 250px;

@@ -1,10 +1,10 @@
 <div id="sitemap">
 	<div id="smwrapper">
-		<div id="sm1"><h1 class="fonts-sitemap-title">Libraries</h1>
+		<div id="sm1"><h1 class="fonts-sitemap-title">Presentations</h1>
 			<ul class="fonts-sitemap">
-			  <% Library.all(:order => "name").each do |library| %>
-				<li><%= link_to library.name, library %></li>
-			  <% end %>	
+			  	<li>Accelerating Risk Management</li>
+				<li>Accelerating Project Management</li>
+				<li>Automating OH&S Health Assessments</li>
 			</ul>
 		</div>
 		<div id="sm2"><h1 class="fonts-sitemap-title">Ways to Buy</h1>
@@ -23,20 +23,13 @@
 				<li><%= link_to 'User Manuals', help_path %></li>
 			</ul>
 		</div>
-		<div id="sm4"><h1 class="fonts-sitemap-title">Learning</h1>
+		<div id="sm4"><h1 class="fonts-sitemap-title">Success Stories</h1>
 			<ul class="fonts-sitemap">
-				<li>Basel II/III</li>
-				<li>Solvency II</li>
-				<li>ISO 27000</li>
-				<li>ISO 14000</li>
-				<li>ISO 31000</li>
-				<li>COSO ERM</li>
-				<li>COBIT 4/5</li>
-				<li>FAS-133</li>
-				<li>APRA</li>
-				<li>AML/CT</li>
-				<li>FATCA</li>
-				<li>SSAE-16</li>
+				<li>Process Improvement of the AP Function</li>
+				<li>Risk Management of Shared Services</li>
+				<li>Compliance Management Using Controls Self-Assessment</li>
+				<li>SAP Business Requirements</li>
+				<li>Business Rule Creation for Financial Transformation</li>
 			</ul>
 		</div>
 		<div id="sm5"><h1 class="fonts-sitemap-title">Company</h1>
@@ -45,7 +38,6 @@
 				<li><%= link_to 'Contact Us', new_contact_path %></li>
 				<li><%= link_to 'Management Team', management_path %></li>
 				<li>Partners</li>
-				<li><%= link_to 'Sales', sales_path %></li>
 				<li><%= link_to 'Careers', careers_path %></li>
 				<li>Corporate Responsibility</li>
 			</ul>

@@ -8,6 +8,7 @@ gem 'country_select', '~> 0.0.2'
 gem 'copycopter_client', '2.0.0'
 gem 'activeadmin', '~> 0.4.3'
 gem 'formtastic', '~> 2.1.1'
+gem 'recaptcha', :require => 'recaptcha/rails'
 
 group :development do
   gem 'mysql2', '0.3.11'

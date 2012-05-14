@@ -7,15 +7,25 @@
 
 <div class="row-fluid">
   <div class="span9">
-	<h3><%= t "about.title1", default: "Link Global" %></h3>
-    <p>
-<%= t "about.para1", default: "Peoplenetz offers a broad array of tightly integrated products designed to help organizations run more efficiently and make the most of their human capital and available corporate data. We help organizations increase their performance by providing solutions that capitalize on knowledge generation, knowledge management and knowledge networks. The unifying theme of all of our applications is simplicity; we believe if software may only be productive if it is easy to use. Let us show you how." %>
-	<%= button_to "Learn more &raquo;".html_safe, new_case_path, :class => "btn", :method => :get %>
-	</p>
-  </div>
+	<div class="row-fluid">
+	  <h3><%= t "about.title1", default: "Our Company" %></h3>
+      <p>
+<%= t "about.para1", default: "Peoplenetz helps organizations of all sizes and industries run more efficiently and effectively while reducing organizational costs. Peoplenetz empowers people and organizations to work together more efficiently and use business insight more effectively to stay ahead of the competition. We do this by extending the availability of software across on-premise installations, on-demand deployments and mobile devices." %>
+	  </p>
+    </div>
 
-  <div class="span3">
-	<%=# render "about_sidebar"
-	%>
+  	<div class="row-fluid">
+      <p>
+<%= t "about.para2", default: "The power of our solutions and partners drives growth and creates significant new value for our customers, Peoplenetz and ultimately entire industries and the economy at large." %>
+	  </p>
+	</div>
+
+	<div class="row-fluid">
+      <p>
+<%= t "about.para3", default: "Our mission is to help organizations of all sizes and industries to run more efficiently with fewer resources. Our vision is to enable organizations around the world to deliver products and services for less for the betterment of society." %>
+	  </p>
+	</div>
+
+  
   </div> <!-- /span -->
 </div>
