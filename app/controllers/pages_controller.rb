@@ -54,4 +54,8 @@ class PagesController < ApplicationController
   def corporate_responsibility
     
   end
+  
+  def partners
+    
+  end
 end

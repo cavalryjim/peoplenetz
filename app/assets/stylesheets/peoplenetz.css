@@ -59,12 +59,14 @@ h2.pnetz {
 	margin-right: auto;
 }
 
+.banner img {
+	padding-bottom: 7px;
+}
+
 .hpbox {
 	color: #FFFFFF;
 	position: relative;
-	
 	display: inline-block;
-	
 }
 
 .hpbox h2, .hpbox img {
@@ -77,12 +79,12 @@ h2.pnetz {
 	text-align: left;
 	vertical-align: middle;
 	color: #00B8E6;
+	padding-right: 5px;
 }
 
 .hpbox a {
 	position: relative;
 	float: left;
-
 	background-color: transparent;
 	font-family: arial;
 	font-size: 12px;
@@ -223,7 +225,7 @@ div#footer {
 	font-size: 10px;
 }
 
-footer {
+footer, footer p {
 	color: #808080;
-	font-size: 8pt;
+	font-size: 8pt !important;
 }

@@ -49,9 +49,9 @@
 	position:absolute;
 	left:0px;
 	bottom:0px;
-	background:#fff;
-	color:#000;
-	opacity:0.8; /* Overridden by captionOpacity setting */
+	background:#000000;
+	color:#FFFFFF;
+	opacity:0.5; /* Overridden by captionOpacity setting */
 	width:100%;
 	z-index:8;
 }
