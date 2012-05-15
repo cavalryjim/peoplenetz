@@ -31,4 +31,13 @@ $(function() {
 	});
     return false;
   });
+  
+  $("#entry_level").live("click", function() {
+  	$("#entry_level_careers").show();
+  	$("#experienced_hire_careers").hide();
+  });
+  $("#professional_level").live("click", function() {
+  	$("#entry_level_careers").hide();
+  	$("#experienced_hire_careers").show();
+  });
 }); 

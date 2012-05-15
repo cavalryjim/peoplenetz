@@ -29,6 +29,7 @@ Peoplenetz::Application.routes.draw do
   match '/help', :to => 'pages#help'
   match '/careers', :to => 'pages#careers'
   match '/management', :to => 'pages#management_team'
+  match '/corporate_responsibility', :to => 'pages#corporate_responsibility'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

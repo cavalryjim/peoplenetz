@@ -50,4 +50,8 @@ class PagesController < ApplicationController
   def management_team
     
   end
+  
+  def corporate_responsibility
+    
+  end
 end

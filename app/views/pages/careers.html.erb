@@ -6,12 +6,52 @@
 </div> <!--/row -->
 
 <div class="row-fluid">
-  <div class="span9">
-	<h3><%= t "careers.header1", default: "Join Us"%></h3>
-    <p>
-<%= t "careers.para1", default: "We are always looking for great people to join our team." %>
-	</p>
-  </div>
-
+  <div class="span12">
   
+    <div class="row-fluid"> 
+	  <h3><%= t "careers.header1", default: "Join Us"%></h3>
+      <p>
+<%= t "careers.para1", default: "We are always looking for great people to join our team." %>
+	  </p>
+    </div>
+
+  </div>
+</div>  
+
+<div class="row-fluid">
+  <div class="span9">
+  	<h3>Launching Your Career</h3>
+  	<div id="entry_level_careers">
+  	  <p>We know that you have worked hard to complete your degree. Now make that degree work for you in a dynamic, challenging environment where you can grow and learn. Peoplenetz offers a variety of careers for graduates which build on the knowledge, skills and interests, you gained in college. Peoplenetz offers is a fast-paced, ever-changing environment that is a great place for graduates to launch rewarding careers.</p>
+	  <h3>Entry-level Consulting</h3>
+	  <p>We offer graduates to build their consulting careers and build core business, technology and industry expertise, delivering innovative solutions that transform the way our clients do business. Working with some of the largest consulting firms in the world across industry sectors, you will build deep insights into various industries in which our clients operate. Apply today for a career in Learn more about entry-level careers in Systems Integration Consulting, Technology Consulting or Management Consulting.</p>
+	  <h3>Entry-level Programming Careers</h3>
+	  <p>Begin a technology-focused career with our technology experts that provide programming and technology implementation services focused on developing ruby on rails and java solutions on cloud platforms..</p>
+	  <h3>Internships</h3>
+	  <p>Looking to get involved with Peoplenetz before you graduate? Learn about Peoplenetz summer internships, student programs and scholarship opportunities. Apply today for an internship on of our core service areas.</p>
+  	</div>
+  	
+  	<div id="experienced_hire_careers" style="display:none;">
+  	  <p>Peoplenetz offers many careers for experienced professionals that are interested in joining strong teams, learning in a dynamic environment and thriving on challenge. Peoplenetz provides an environment where people leverage their skills, talents, experience and interests grow professionally and build rewarding careers.</p>
+	  <p>Accenture employees offer a wide range of skills and backgrounds a vital ingredient in our recipe for high performance. Choose the skills that you are interested in to learn more about career path options.</p>
+	  <ol>
+		<li>Business Analysis and Strategy skills</li>
+		<li>Change Management</li>
+		<li>Finance</li>
+		<li>Information Technology</li>
+		<li>Operations</li>
+	  </ol>
+	  <p>We offer many different career paths that reflect the needs of our business and provide career options that are aligned with individual needs, aspirations and life stages. No matter what path you take at Peoplenetz, top performance is recognized and the more you hone your skills and knowledge, the more you will be recognized as an expert in your field. At Peoplenetz you will find opportunities to accelerate your career beyond what could be achieved with many other employers.</p>
+  	</div>
+  </div>
+  
+  
+  <div class="span3 ">
+    <div class="well sub_topics" style="padding:5px">
+	  <ul class="fonts-sitemap">
+	    <li><%= link_to 'Entry Level', '#', :id => 'entry_level' %></li> 
+	    <li><%= link_to 'Experienced Hires', '#', :id => 'professional_level'%></li> 
+	  </ul>
+	</div>
+  </div>
 </div>
