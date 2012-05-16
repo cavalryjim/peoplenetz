@@ -9,6 +9,7 @@ gem 'copycopter_client', '2.0.0'
 gem 'activeadmin', '~> 0.4.3'
 gem 'formtastic', '~> 2.1.1'
 gem 'recaptcha', :require => 'recaptcha/rails'
+gem 'twitter-bootstrap-rails', '~> 2.0.6' # JDavis: moved from assets group to fix a Heroku error.
 
 group :development do
   gem 'mysql2', '0.3.11'
@@ -29,7 +30,6 @@ group :assets do
   # gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem 'twitter-bootstrap-rails', '~> 2.0.6'
 end
 
 group :test do
