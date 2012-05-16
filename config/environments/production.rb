@@ -67,5 +67,5 @@ Peoplenetz::Application.configure do
   
   config.action_mailer.default_url_options = { :host => 'www.peoplenetz.com' }
   
-  config.assets.precompile += %w[active_admin.css active_admin.js twitter/bootstrap.js]
+  config.assets.precompile += %w[active_admin.css active_admin.js]
 end
