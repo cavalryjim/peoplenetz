@@ -1,14 +1,12 @@
 <% content_for :title, "About Us" %>
-<div class="row-fluid">
-  <div class="span12 banner">
-	<%= image_tag 'banners/company.jpg' %>
-  </div>
-</div> <!--/row -->
+<%= raw display_banner('company') %>
 
-<div class="row-fluid">
-  <div class="span9">
+<%= render "layouts/begin_content"%>
+
+<div class="row">
+  <div class="span9 offset1">
 	<div class="row-fluid">
-	  <h3><%= t "about.title1", default: "Our Company" %></h3>
+	  <h4><%= t "about.title1", default: "Our Company" %></h4>
       <p>
 <%= t "about.para1", default: "Peoplenetz helps organizations of all sizes and industries run more efficiently and effectively while reducing organizational costs. Peoplenetz empowers people and organizations to work together more efficiently and use business insight more effectively to stay ahead of the competition. We do this by extending the availability of software across on-premise installations, on-demand deployments and mobile devices." %>
 	  </p>
@@ -25,7 +23,9 @@
 <%= t "about.para3", default: "Our mission is to help organizations of all sizes and industries to run more efficiently with fewer resources. Our vision is to enable organizations around the world to deliver products and services for less for the betterment of society." %>
 	  </p>
 	</div>
-
-  
   </div> <!-- /span -->
+
+  <div class="span2"></div>
 </div>
+
+<%= render "layouts/end_content"%>

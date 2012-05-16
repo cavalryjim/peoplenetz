@@ -1,12 +1,10 @@
 <% content_for :title, "Partners" %>
-<div class="row-fluid">
-  <div class="span12 banner">
-	<%= image_tag 'banners/other.jpg' %>
-  </div>
-</div> <!--/row -->
+<%= raw display_banner %>
 
-<div class="row-fluid">
-  <div class="span9">
+<%= render "layouts/begin_content"%>
+
+<div class="row">
+  <div class="span9 offset1">
 	<div class="row-fluid">
       <p>
 <%= t "partners.para1", default: "Partnerships and alliances create additional benefits and opportunities for Peoplenetz and its customers so that we may deliver the best solutions for our customers." %>
@@ -20,7 +18,7 @@
 	</div>
 	
 	<div class="row-fluid">
-	  <h3><%= t "partners.title3", default: "Becoming a Peoplenetz Partner" %></h3>
+	  <h4><%= t "partners.title3", default: "Becoming a Peoplenetz Partner" %></h4>
       <p>
 <%= t "partners.para3", default: "We work with more than 20 technology market leaders to extend our solutions and capabilities. Our network of partnerships strengthens our ability to help our customers achieve sustainable cost reduction, reduced operational expenses, reduced delivery risk and drastically better business outcomes." %>
 	  </p>
@@ -45,6 +43,7 @@
 	</div>
 
   </div>
-
-  
+  <div class="span2"></div>
 </div>
+
+<%= render "layouts/end_content"%>

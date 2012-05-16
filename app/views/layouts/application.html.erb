@@ -19,19 +19,13 @@
     <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
   </head>
   <body>
+	<div class="wrapper">
+      <%= render 'layouts/header' %>
+	  <%= yield %>
+	  
+	</div> <!-- /wrapper -->
 
-    <%= render 'layouts/header' %>
-
-    <div class="container">
-      <div class="content">
-		<%= yield %>
-      </div><!--/content-->
-    </div> <!-- /container -->
-	<%= render 'layouts/site_map'%>
-	
-	
-
-
+	<%= render 'layouts/footer'%>
 
     <!-- Javascripts
     ================================================== -->

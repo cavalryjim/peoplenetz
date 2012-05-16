@@ -1,50 +1,56 @@
-<div id="sitemap">
-	<div id="smwrapper">
-		<div id="sm1"><h1 class="fonts-sitemap-title">Presentations</h1>
-			<ul class="fonts-sitemap">
-			  	<li>Accelerating Risk Management</li>
-				<li>Accelerating Project Management</li>
-				<li>Automating OH&S Health Assessments</li>
-			</ul>
-		</div>
-		<div id="sm2"><h1 class="fonts-sitemap-title">Ways to Buy</h1>
-			<ul class="fonts-sitemap">
-				<li><%= link_to 'Hosted Enterprise', sales_path %></li>
-				<li><%= link_to 'Hosted Project', sales_path %></li>
-				<li><%= link_to 'On Premises Enterprise', sales_path %></li>
-				<li><%= link_to 'On Premises Project', sales_path %></li>
-			</ul>
-		</div>
-		<div id="sm3"><h1 class="fonts-sitemap-title">Help</h1>
-			<ul class="fonts-sitemap">
-				<li><%= link_to 'Web Training', help_path %></li>
-				<li><%= link_to 'On-site Training', help_path %></li>
-				<li><%= link_to 'Classroom Training', help_path %></li>
-				<li><%= link_to 'User Manuals', help_path %></li>
-			</ul>
-		</div>
-		<div id="sm4"><h1 class="fonts-sitemap-title">Success Stories</h1>
-			<ul class="fonts-sitemap">
-				<li>Process Improvement of the AP Function</li>
-				<li>Risk Management of Shared Services</li>
-				<li>Compliance Management Using Controls Self-Assessment</li>
-				<li>SAP Business Requirements</li>
-				<li>Business Rule Creation for Financial Transformation</li>
-			</ul>
-		</div>
-		<div id="sm5"><h1 class="fonts-sitemap-title">Company</h1>
-			<ul class="fonts-sitemap">
-				<li><%= link_to 'About Us', about_path %></li>
-				<li><%= link_to 'Contact Us', new_contact_path %></li>
-				<li><%= link_to 'Management Team', management_path %></li>
-				<li><%= link_to 'Partners', partners_path %></li>
-				<li><%= link_to 'Careers', careers_path %></li>
-				<li><%= link_to 'Corporate Responsibility', corporate_responsibility_path %></li>
-			</ul>
-		</div>
-	  	<%= render 'layouts/footer' %>
-	</div>
-</div>
+	<div id="container">
+	  <div id="content">
+		<div class="row">
+	  	  <div class="span2 offset1">
+				<ul class="fonts-sitemap">
+				  	<li>Accelerating Risk Management</li>
+					<li>Accelerating Project Management</li>
+					<li>Automating OH&S Health Assessments</li>
+				</ul>
+		  </div>
+	
+		  <div class="span2">
+				<ul class="fonts-sitemap">
+					<li><%= link_to 'Hosted Enterprise', sales_path %></li>
+					<li><%= link_to 'Hosted Project', sales_path %></li>
+					<li><%= link_to 'On Premises Enterprise', sales_path %></li>
+					<li><%= link_to 'On Premises Project', sales_path %></li>
+				</ul>
+		  </div>
+	
+		  <div class="span2">
+				<ul class="fonts-sitemap">
+					<li><%= link_to 'Web Training', help_path %></li>
+					<li><%= link_to 'On-site Training', help_path %></li>
+					<li><%= link_to 'Classroom Training', help_path %></li>
+					<li><%= link_to 'User Manuals', help_path %></li>
+				</ul>
+		  </div>
+		  <div class="span3">
+				<ul class="fonts-sitemap">
+					<li>Process Improvement of the AP Function</li>
+					<li>Risk Management of Shared Services</li>
+					<li>Compliance Management Using Controls Self-Assessment</li>
+					<li>SAP Business Requirements</li>
+					<li>Business Rule Creation for Financial Transformation</li>
+				</ul>
+		  </div>
+	
+		  <div class="span2">
+				<ul class="fonts-sitemap">
+					<li><%= link_to 'About Us', about_path %></li>
+					<li><%= link_to 'Contact Us', new_contact_path %></li>
+					<li><%= link_to 'Management Team', management_path %></li>
+					<li><%= link_to 'Partners', partners_path %></li>
+					<li><%= link_to 'Careers', careers_path %></li>
+					<li><%= link_to 'Corporate Responsibility', corporate_responsibility_path %></li>
+				</ul>
+	 	  </div>
+	
+	
+	    </div>	
+	  </div> <!--/content -->
+	</div> <!--/container -->
 
 
 

@@ -1,12 +1,12 @@
 <% content_for :title, "Build Case" %>
-<div class="row-fluid">
-  <div class="span12 banner">
-	<%= image_tag 'banners/other.jpg' %>
-  </div>
-</div> <!--/row -->
+<%= raw display_banner %>
 
-<h3>Define your organization</h3>
+<%= render "layouts/begin_content"%>
+
+<h4>Define your organization</h4>
 
 <%= render 'form' %>
+
+<%= render "layouts/end_content"%>
 
 

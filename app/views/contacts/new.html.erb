@@ -1,13 +1,11 @@
 <% content_for :title, "Contact Us" %>
-<div class="row-fluid">
-  <div class="span12 banner">
-	<%= image_tag 'banners/other_md.jpg' %>
-  </div>
-</div> <!--/row -->
+<%= raw display_banner %>
+
+<%= render "layouts/begin_content"%>
 
 <div class="row-fluid">
   <div class="span9">
-	<h3><%= t "contact.header", default: "Information Request" %></h3>
+	<h4><%= t "contact.header", default: "Information Request" %></h4>
 	<p><%= t "contact.under_header", default: "Have a question?  We would like to hear from you." %></p>
   	<% flash.each do |key, value| %>
       <div class="alert alert-success">
@@ -23,3 +21,5 @@
 	<%= render 'contact_info' %>
   </div> <!-- span -->
 </div>
+
+<%= render "layouts/end_content" %>

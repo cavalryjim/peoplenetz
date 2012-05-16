@@ -1,8 +1,6 @@
 <% content_for :title, "Home" %>
-</div><!-- content -->
-</div><!-- /container -->
 
-<div style="background-color:#F5F5F5;">
+<div style="background-color:#F5F5F5; padding-top: 70px;">
 
   <div class="container">
 	<div class="slider-wrapper theme-default">
@@ -17,7 +15,7 @@
 		<%= link_to "We make organizations faster, leaner and more efficient", new_case_path %>
       </div>
 	  <div id="htmlcaption2" class="nivo-html-caption">
-        <%= link_to "Requirements elicitation and validation at a fraction of the its normal cost", new_case_path %>
+        <%= link_to "Elicit valid requirements at a fraction of the normal cost", new_case_path %>
       </div>
  	  <div id="htmlcaption3" class="nivo-html-caption">
         <%= link_to "Accelerate productivity while reducing operational expenses", new_case_path %>
@@ -25,60 +23,62 @@
 	  <div id="htmlcaption4" class="nivo-html-caption">
         <%= link_to "No more sampling, guarantee stakeholder buy-in", new_case_path %>
       </div>
-    </div>
-  </div>
+   </div> <!-- /slider-wrapper -->
+  </div> <!-- /container -->
 
   <div id="awesometagline">
     <a href="#"><%= t "home.headline", default: "Turn insight into business as usual" %></a>
   </div>
 </div>
-<!--
-<div class="span-window" style="background-color:#000000">
-  <div style="width:960px; text-align:right;">
-  </div>
-</div>
 
-<div class="row-fluid"></div>
--->
-<div class="container">
-  <div class="content">
+<%= render "layouts/begin_content"%>
+  
 	<div class="row">
 	  <div class="span4">
 	   <div class="hpbox">
-		<%= image_tag 'assessment.gif', :size => '64x64' %>
-	    <h2>Assessment</h2></br></br>
-	    <p><%= t "home.assessment", default: "Specializ accelerates the assessment of business ideas, product development and customer satisfaction"%> </p>
-	    <p>
-		  <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
-		</p>
+		<div class="row">
+		  <%= image_tag 'assessment.gif', :size => '64x64' %>
+	      <h2>Assessment</h2>
+		</div>
+		<div class="row">
+	      <p><%= t "home.assessment", default: "Specializ accelerates the assessment of business ideas, product development and customer satisfaction"%> </p>
+	      <p>
+		    <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
+		  </p>
+		</div>
+	   </div>
+	  </div>
+
+	  <div class="span4">
+	   <div class="hpbox">
+		<div class="row">
+		  <%= image_tag 'compliance.gif', :size => '64x64' %>
+	      <h2>Compliance</h2>
+		</div>
+		<div class="row">
+	      <p><%= t "home.compliance", default: "Our solutions drastically reduce the cost of compliance and risk management functions across functions and business lines" %> </p>
+	      <p>
+		    <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
+		  </p>
+		</div>
 	   </div>
 	  </div>
 	  <div class="span4">
 	   <div class="hpbox">
-		<%= image_tag 'compliance.gif', :size => '64x64' %>
-	    <h2>Compliance</h2></br></br>
-	    <p><%= t "home.compliance", default: "Our solutions drastically reduce the cost of compliance and risk management functions across functions and business lines" %> </p>
-	    <p>
-		  <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
-		</p>
-	   </div>
-	  </div>
-	  <div class="span4">
-	   <div class="hpbox">
-		<%= image_tag 'consensus.gif', :size => '64x64' %>
-	    <h2>Consensus</h2></br></br>
-	    <p><%= t "home.consensus", default: "Specializ quickly transforms stakeholder management by guaranteeing organizational consensus on any topic with populations of user as opposed to samples" %></p>
-	    <p>
-		  <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
-		</p>
+		<div class="row">
+		  <%= image_tag 'consensus.gif', :size => '64x64' %>
+	      <h2>Consensus</h2>
+		</div>
+		<div class="row">
+	      <p><%= t "home.consensus", default: "Specializ quickly transforms stakeholder management by guaranteeing organizational consensus on any topic with populations of user as opposed to samples" %></p>
+	      <p>
+		    <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
+		  </p>
+		</div>
        </div>
 	  </div>
-	</div>
-  </div>
-</div>
 
-
-<div class="container">
-  <div class="content">
+	</div> <!-- /row -->
+<%= render "layouts/end_content"%>
 
 

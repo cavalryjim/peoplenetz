@@ -66,13 +66,15 @@ Author URI: http://dev7studios.com
     font-family: Helvetica, Arial, sans-serif;
     color:#FFFFFF;
     font-weight:bold;
+    font-size: 20pt;
 }
 .theme-default .nivo-caption a {
     color:#FFFFFF;
     font-weight:bold;
-    /*border-bottom:1px dotted #000;*/
+    font-size: 20pt;
 }
 .theme-default .nivo-caption a:hover {
-    color:#000;
-    background-color:#fff;
+    border-bottom:1px dotted #000;
+    /**color:#000;
+    background-color:#fff;**/
 }

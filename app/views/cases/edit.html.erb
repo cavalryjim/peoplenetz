@@ -1,10 +1,9 @@
 <% content_for :title, "Build Case" %>
 
-<div class="row-fluid">
-  <div class="span12 banner">
-	<%= image_tag 'banners/other.jpg' %>
-  </div>
-</div> <!--/row -->
+<%= raw display_banner %>
+
+<%= render "layouts/begin_content"%>
+
   <% flash.each do |key, value| %>
     <div class="alert alert-success">
 	  <button class="close" data-dismiss="alert">×</button>
@@ -14,4 +13,6 @@
 
 <h3>Define your organization</h3>
 <%= render 'form' %>
+
+<%= render "layouts/end_content"%>
 

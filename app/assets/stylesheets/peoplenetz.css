@@ -3,6 +3,40 @@ html, body {
     color: #FFFFFF;
 }
 
+footer { 
+	width: 100%; 
+	min-width: 1024px; 
+	background-color: #1A1A1A; 
+	color: #FFFFFF;  
+	padding 5px;
+}
+
+footer, footer p, footer a {
+	color: #808080;
+	font-size: 8pt !important;
+}
+
+
+footer ul, footer ol {
+	margin: 0 !important;
+	list-style-type: none;
+}
+
+footer li {
+	line-height: 16px;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -180px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+	height: 180px; /* .push must be the same height as .footer */
+}
+
 h2.pnetz {
 	font-size: 28px !important;
 	
@@ -67,6 +101,7 @@ h2.pnetz {
 	color: #FFFFFF;
 	position: relative;
 	display: inline-block;
+	margin-right: 7px;
 }
 
 .hpbox h2, .hpbox img {
@@ -225,7 +260,4 @@ div#footer {
 	font-size: 10px;
 }
 
-footer, footer p {
-	color: #808080;
-	font-size: 8pt !important;
-}
+

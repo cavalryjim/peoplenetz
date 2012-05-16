@@ -1,12 +1,11 @@
 <% content_for :title, "Why Peoplenetz" %>
-<div class="row-fluid">
-  <div class="span12 banner">
-	<%= image_tag 'banners/company.jpg' %>
-  </div>
-</div> <!--/row -->
 
-<div class="row-fluid">
-  <div class="span9">
+<%= raw display_banner('company') %>
+
+<%= render "layouts/begin_content"%>
+
+<div class="row">
+  <div class="span9 offset1">
 	<div class="row-fluid">
       <p>
 <%= t "why_peoplenetz.para1", default: "In today’s global environment competition is fierce and competitive advantage can come from anywhere. Technology has become much more than just an organization’s software, its adaptation and correct usage has become a key differentiator and a driver for innovation and competitive advantage." %>
@@ -20,4 +19,7 @@
 	</div>
 
   </div> <!-- span -->
+  <div class="span2"></div>
 </div>
+
+<%= render "layouts/end_content"%>

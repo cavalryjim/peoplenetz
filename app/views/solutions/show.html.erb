@@ -1,16 +1,14 @@
 <% content_for :title, @solution%>
-<div class="row-fluid">
-  <div class="span12 banner">
-	<%= image_tag 'banners/solutions.jpg' %>
-  </div>
-</div> <!--/row -->
+<%= raw display_banner('solutions') %>
+
+<%= render "layouts/begin_content"%>
 
 <div class="row-fluid">
   <div class="span10">
 	<div class="row-fluid">
-      <h3>
+      <h4>
 	    <%= @solution.name %>
-	  </h3>
+	  </h4>
   	  <%= @solution.description.html_safe %>
 	</div>
 	
@@ -36,3 +34,5 @@
 	<%= render 'libraries/accordion'%>
   </div>
 </div>
+
+<%= render "layouts/end_content" %>
