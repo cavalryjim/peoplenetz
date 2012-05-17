@@ -71,8 +71,9 @@ Author URI: http://dev7studios.com
     display:block;
     color:#FFFFFF;
     font-weight:bold;
-    font-size: 40pt;
+    font-size: 38pt;
     text-decoration: none;
+    margin-left: 5px;
 }
 .theme-default .nivo-caption a:hover {
     border-bottom:1px dotted #000;
