@@ -40,4 +40,6 @@ $(function() {
   	$("#entry_level_careers").hide();
   	$("#experienced_hire_careers").show();
   });
+  
+  
 }); 
