@@ -92,7 +92,7 @@ h2.pnetz {
 }
 
 .banner img {
-	padding-bottom: 7px;
+	/*padding-bottom: 7px;*/
 }
 
 .hpbox {
@@ -149,7 +149,8 @@ h2.pnetz {
 }
 
 .navbar .brand:hover {
-	background-color: #D8D8D8;
+	background-color: #dddddd;
+	
 }
 
 .form-button {
@@ -257,5 +258,3 @@ div#footer {
 	font-family: arial;
 	font-size: 10px;
 }
-
-
