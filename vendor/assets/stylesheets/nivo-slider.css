@@ -47,7 +47,7 @@
 /* Caption styles */
 .nivo-caption {
 	position:absolute;
-	top: 80px;
+	top: 72px;
 	left: 90px;
 	background:#000000;
 	color:#FFFFFF;
@@ -56,12 +56,12 @@
 	z-index:8;
 }
 .nivo-caption p {
-	padding:0px;
-	margin:0;
-	line-height: 48px;
+	padding:10px;
+	margin:0px;
+	line-height: 300%;
 }
 .nivo-caption a {
-	display:block !important;
+	/*display:block !important;*/
 }
 .nivo-html-caption {
     display:none;
