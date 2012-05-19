@@ -60,7 +60,7 @@ h2.pnetz {
 	height: 120px;
 	width: 100%;
 	min-width: 1024px;
-	background-color: #dddddd;
+	background-color: #f5f5f5;
 	border-top: 1px solid #D0D0D0;
 }
 
@@ -129,7 +129,7 @@ h2.pnetz {
 }
 
 .navbar {
-	border-bottom: 1px solid #D0D0D0;
+	/*border-bottom: 1px solid #D0D0D0; */
 	background-color: #272727;
 }
 
@@ -138,18 +138,20 @@ h2.pnetz {
 	background-image: none;
 	color: #000000;
 }
+
 .navbar .nav > li > a {
 	color: #000000 !important;
+	margin-right: 35px;
 }
 
 .navbar .nav > li > a:hover {
     background-color: transparent;
-    color: blue !important;
+    color: #0CF !important;
     text-decoration: none;
 }
 
 .navbar .brand:hover {
-	background-color: #dddddd;
+	background-color: #f5f5f5;
 	
 }
 
