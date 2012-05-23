@@ -139,9 +139,14 @@ h2.pnetz {
 	color: #000000;
 }
 
+.navbar-inner .container {
+	width:1024px;
+	min-width:1024px;
+}
+
 .navbar .nav > li > a {
 	color: #000000 !important;
-	margin-right: 35px;
+	margin-right: 5px;
 }
 
 .navbar .nav > li > a:hover {
