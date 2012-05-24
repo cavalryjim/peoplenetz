@@ -50,7 +50,7 @@
 	top: 55px;
 	left: 90px;
 	color:#000000;
-	opacity:0.7; /* Overridden by captionOpacity setting */
+	opacity:1.0; /* Overridden by captionOpacity setting */
 
 	z-index:8;
 }
