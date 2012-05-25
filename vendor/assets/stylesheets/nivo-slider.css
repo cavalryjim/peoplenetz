@@ -51,7 +51,6 @@
 	left: 90px;
 	color:#000000;
 	opacity:1.0; /* Overridden by captionOpacity setting */
-
 	z-index:8;
 }
 .nivo-caption p {
