@@ -11,7 +11,7 @@ footer {
 }
 
 footer, footer p, footer a {
-	color: #808080;
+	color: #8080    color: #404040;80;
 	font-size: 8pt !important;
 }
 
@@ -66,15 +66,19 @@ h2.pnetz {
 	background-color: transparent;
 	font-family: arial;
 	font-size: 36px;
-	font-weight: bold;
+	font-weight: medium;
 	text-decoration: none;
 	text-align: center;
 	line-height: 120px;
 	vertical-align: middle;
-	display: block;
+	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	color: #f5f5f5;
+	color: #909090;
+}
+
+#awesometagline a:hover {
+	text-decoration:underline;
 }
 
 #homepageicons {
@@ -143,9 +147,11 @@ h2.pnetz {
 	margin-right:auto;
 }
 
-.container img {
+
+.banner-container .container {
 	margin-left:auto;
-	margin-right:auto;	
+	margin-right:auto;
+	text-align: center;
 }
 
 .navbar .nav > li > a {
@@ -242,6 +248,7 @@ div#sitemap a {
 #smwrapper li {
 	line-height: 16px;
 }
+
 /*
 div#footer {
 	float: right;

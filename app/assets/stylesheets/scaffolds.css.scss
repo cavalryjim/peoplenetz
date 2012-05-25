@@ -21,7 +21,18 @@ a {
     color: #666; }
   &:hover {
     color: #fff;
-    background-color: #000; } }
+    background-color: #000; }
+}
+    
+.nivo-caption p a {
+    background-color: transparent;
+    font-weight:medium;
+    color: #1A1A1A;
+}
+
+.nivo-caption p a:hover {
+    text-decoration:underline;
+}
 
 div {
   &.field, &.actions {
