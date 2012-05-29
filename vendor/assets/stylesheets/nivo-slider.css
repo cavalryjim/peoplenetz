@@ -8,8 +8,7 @@
  * 
  * March 2010
  */
- 
- 
+
 /* The Nivo Slider styles */
 .nivoSlider {
 	position:relative;
@@ -47,7 +46,7 @@
 /* Caption styles */
 .nivo-caption {
 	position:absolute;
-	top: 55px;
+	top: 45px;
 	left: 90px;
 	color:#000000;
 	opacity:1.0; /* Overridden by captionOpacity setting */
@@ -56,7 +55,7 @@
 .nivo-caption p {
 	padding:10px;
 	margin:0px;
-	line-height: 350%;
+	line-height: 390%;
 }
 .nivo-caption a {
 	/*display:block !important;*/
