@@ -1,17 +1,17 @@
 html, body {
-    background-color: #272727 !important;
-    color: #FFFFFF;
+    background-color: #f5f5f5 !important;
+    color: #272727;
 }
 
 footer { 
 	width: 100%; 
 	min-width: 1024px; 
-	background-color: #1A1A1A; 
+	background-color: #EDEDED; 
 	color: #FFFFFF;  
 }
 
 footer, footer p, footer a {
-	color: #808080;
+	color: #272727;
 	font-size: 8pt !important;
 }
 
@@ -22,6 +22,10 @@ footer ul, footer ol {
 
 footer li {
 	line-height: 16px;
+}
+
+footer a:hover {
+	background-color:transparent;	
 }
 
 .wrapper {
@@ -46,7 +50,7 @@ h2.pnetz {
 	width: 1024px;
 	min-width: 1024px;
 	display: block;
-	background-color: #272727 !important;
+	background-color: #f5f5f5 !important;
 }
 
 #social a img {
@@ -58,8 +62,7 @@ h2.pnetz {
 	height: 120px;
 	width: 100%;
 	min-width: 1024px;
-	background-color: #1A1A1A;
-	border-top: 1px solid #D0D0D0;
+	background-color: #f5f5f5;
 }
 
 #awesometagline a {
@@ -71,10 +74,12 @@ h2.pnetz {
 	text-align: center;
 	line-height: 120px;
 	vertical-align: middle;
-	display:block;
+	text-align:center;
 	margin-left: auto;
 	margin-right: auto;
-	color: #F5F5F5;
+	color: #757575;
+	display:block;
+	width:30%;
 }
 
 #awesometagline a:hover {
@@ -97,7 +102,7 @@ h2.pnetz {
 }
 
 .hpbox {
-	color: #FFFFFF;
+	color: #757575;
 	position: relative;
 	display: inline-block;
 	margin-right: 7px;
@@ -112,7 +117,7 @@ h2.pnetz {
 	font-weight: bold;
 	text-align: left;
 	vertical-align: middle;
-	color: #00B8E6;
+	color: #5B5B5B;
 	padding-right: 5px;
 }
 
@@ -131,13 +136,15 @@ h2.pnetz {
 
 .navbar {
 	/*border-bottom: 1px solid #D0D0D0; */
-	background-color: #272727;
+	background-color: #f5f5f5;
 }
 
+/* Navigation Bar */
 .navbar-inner {
 	background-color: #f5f5f5;
 	background-image: none;
-	color: #000000;
+	color: #F5F5F5;
+	box-shadow:none;
 }
 
 .navbar-inner .container {
@@ -154,16 +161,17 @@ h2.pnetz {
 }
 
 .navbar .nav > li > a {
-	color: #000000 !important;
+	color: #272727 !important;
 	margin-right: 5px;
 }
 
 .navbar .nav > li > a:hover {
     background-color: transparent;
-    color: #0CF !important;
+    color: #9BEAFF !important;
     text-decoration: none;
 }
 
+/* Navigation Bar */
 .navbar .brand:hover {
 	background-color: #f5f5f5;
 }
@@ -183,7 +191,7 @@ div#sitemap {
 	height: 250px;
 	width: 100%;
 	min-width: 1024px;
-	background-color: #1A1A1A;
+	background-color: #D8D8D8;
 	color: #FFFFFF;
 }
 
@@ -267,10 +275,11 @@ div#footer {
 	font-size: 12px;
 	font-style: italic;
 	text-align: left;
-	color: #00CCFF;
+	color: #5B5B5B;
 }
 
 .fonts-sitemap {
 	font-family: arial;
 	font-size: 10px;
+	color: #414141;
 }

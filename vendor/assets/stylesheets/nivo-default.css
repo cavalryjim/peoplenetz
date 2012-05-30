@@ -32,6 +32,7 @@ Author URI: http://dev7studios.com
 	bottom:0px; /* JDavis: this moves the control up & down */
     margin-left:-40px; /* JDavis: tweak this to center bullets */
 }
+
 .theme-default .nivo-controlNav a {
 	display:block;
 	width:22px;
@@ -42,6 +43,7 @@ Author URI: http://dev7studios.com
 	margin-right:3px;
 	float:left;
 }
+
 .theme-default .nivo-controlNav a.active {
 	background-position:0 -22px;
 }
@@ -73,7 +75,9 @@ Author URI: http://dev7studios.com
     font-size: 38pt;
     text-decoration: none;
     margin-left: 5px;
+	color:#f5f5f5;
 }
 .theme-default .nivo-caption a:hover {
 	background-color: none;
+	color:#9BEAFF;
 }
