@@ -1,17 +1,17 @@
 html, body {
-    background-color: #f5f5f5 !important;
-    color: #272727;
+    background-color: #1B1B24 !important;
+    color: #999BB8;
 }
 
 footer { 
 	width: 100%; 
 	min-width: 1024px; 
-	background-color: #EDEDED; 
-	color: #FFFFFF;  
+	background-color: #111116; 
+	color:#999BB8;  
 }
 
 footer, footer p, footer a {
-	color: #272727;
+	color: #999BB8;
 	font-size: 8pt !important;
 }
 
@@ -25,7 +25,8 @@ footer li {
 }
 
 footer a:hover {
-	background-color:transparent;	
+	background-color:transparent;
+	color:#999BB8;
 }
 
 .wrapper {
@@ -33,6 +34,7 @@ footer a:hover {
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -180px; /* the bottom margin is the negative value of the footer's height */
+	background-color: #1B1B24;
 }
 
 footer, .push {
@@ -50,7 +52,7 @@ h2.pnetz {
 	width: 1024px;
 	min-width: 1024px;
 	display: block;
-	background-color: #f5f5f5 !important;
+	background-color: #1B1B24 !important;
 }
 
 #social a img {
@@ -61,8 +63,7 @@ h2.pnetz {
 	margin-bottom: 10px;
 	height: 120px;
 	width: 100%;
-	min-width: 1024px;
-	background-color: #f5f5f5;
+	background-color: #1B1B24;
 }
 
 #awesometagline a {
@@ -77,9 +78,10 @@ h2.pnetz {
 	text-align:center;
 	margin-left: auto;
 	margin-right: auto;
-	color: #757575;
+	color: #999BB8;
+	min-width: 1024px;
+	width: 100%;
 	display:block;
-	width:30%;
 }
 
 #awesometagline a:hover {
@@ -102,7 +104,7 @@ h2.pnetz {
 }
 
 .hpbox {
-	color: #757575;
+	color: #999BB8;
 	position: relative;
 	display: inline-block;
 	margin-right: 7px;
@@ -117,7 +119,7 @@ h2.pnetz {
 	font-weight: bold;
 	text-align: left;
 	vertical-align: middle;
-	color: #5B5B5B;
+	color: #7973B9;
 	padding-right: 5px;
 }
 
@@ -135,13 +137,12 @@ h2.pnetz {
 }
 
 .navbar {
-	/*border-bottom: 1px solid #D0D0D0; */
-	background-color: #f5f5f5;
+	background-color: #1B1B24;
 }
 
 /* Navigation Bar */
 .navbar-inner {
-	background-color: #f5f5f5;
+	background-color: #1B1B24;
 	background-image: none;
 	color: #F5F5F5;
 	box-shadow:none;
@@ -152,6 +153,7 @@ h2.pnetz {
 	min-width:1024px;
 	margin-left:auto;
 	margin-right:auto;
+	background-color: #1B1B24;
 } 
 
 .banner-container .container {
@@ -161,42 +163,33 @@ h2.pnetz {
 }
 
 .navbar .nav > li > a {
-	color: #272727 !important;
+	color: #999BB8 !important;
 	margin-right: 5px;
 }
 
 .navbar .nav > li > a:hover {
     background-color: transparent;
-    color: #9BEAFF !important;
+    color: #7973B9 !important;
     text-decoration: none;
 }
 
 /* Navigation Bar */
 .navbar .brand:hover {
-	background-color: #f5f5f5;
+	background-color: #1B1B24;
 }
 
 .form-button {
-	background-color:transparent; 
+	background-color:#1B1B24; 
 	border-top:none;
 }
 
+.simple_form {
+	color: #7B7DA2;
+}
+
 .simple_form input, select, textarea {
-	background-color: #202020;
-	color: #FFFFFF;
-}
-
-div#sitemap {
-	margin: 10 auto 10 auto;
-	height: 250px;
-	width: 100%;
-	min-width: 1024px;
-	background-color: #D8D8D8;
-	color: #FFFFFF;
-}
-
-div#sitemap a {
-	color: #FFFFFF;
+	background-color: #1F1F29;
+	border: solid thin #232334;
 }
 
 #smwrapper {
@@ -256,30 +249,20 @@ div#sitemap a {
 	line-height: 16px;
 }
 
-/*
-div#footer {
-	float: right;
-	text-align: right;
-	color: #232323;
-	font-weight: bold;
-	font-size: 10px;
-	padding: 2px 4px 2px 0px;
-	height: 14px;
-	width: 1020px;
-	max-width: 1020px;
-}
-*/
-
 .fonts-sitemap-title {
 	font-family: arial;
 	font-size: 12px;
 	font-style: italic;
 	text-align: left;
-	color: #5B5B5B;
+	color: #7973B9;
 }
 
-.fonts-sitemap {
+.fonts-sitemap, .fonts-sitemap li a {
 	font-family: arial;
 	font-size: 10px;
-	color: #414141;
+	color: #7B7DA2;
+}
+
+.fonts-sitemap li a:hover {
+	color: #7973B9;
 }
