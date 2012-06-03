@@ -156,10 +156,39 @@ h2.pnetz {
 	background-color: #1B1B24;
 } 
 
+.banner-container {
+    padding-top:70px;
+    width:100%;
+    min-width:1024px;
+    background-color:#1B1B24;
+    margin-bottom: 10px;
+}
+
 .banner-container .container {
 	margin-left:auto;
 	margin-right:auto;
 	text-align: center;
+}
+
+ .banner-container .container .wrap{
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+}
+
+.banner-container .container .wrap span.comment{
+  position:absolute;
+  top: 45px;
+  left: 190px;
+  color:#000000;
+  opacity:1.0; 
+  z-index:8;
+}
+
+.banner-container .container .wrap:hover span.comment a{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .navbar .nav > li > a {
