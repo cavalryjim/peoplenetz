@@ -15,7 +15,7 @@ group :development do
   gem 'rspec-rails', '2.9.0'
   gem 'annotate', '~> 2.4.1.beta'
   #gem 'taps', :require => false # has an sqlite dependency, which heroku hates
-  #gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 # Gems used only for assets and not required
