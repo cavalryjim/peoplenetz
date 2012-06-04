@@ -178,9 +178,9 @@ h2.pnetz {
 
 .banner-container .container .wrap span.comment{
   position:absolute;
-  top: 45px;
-  left: 190px;
-  color:#000000;
+  top: 35px;
+  left: 200px;
+  color:#AAA6D1;
   opacity:1.0; 
   z-index:8;
 }
