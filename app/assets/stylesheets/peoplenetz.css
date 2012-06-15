@@ -294,6 +294,7 @@ h2.pnetz {
 
 .fonts-sitemap li a:hover {
 	color: #7973B9;
+	background-color:transparent;
 }
 
 .control-label {
