@@ -5,7 +5,9 @@
 
 # Enable parameter wrapping for JSON. You can disable this by setting :format to an empty array.
 ActiveSupport.on_load(:action_controller) do
-  wrap_parameters format: [:json]
+  # JDavis: ruby 1.8.7 does not support the new-style hash argument.  Changing for new hosting site.
+  #wrap_parameters format: [:json]
+  wrap_parameters :format => [:json]
 end
 
 # Disable root element in JSON by default.
