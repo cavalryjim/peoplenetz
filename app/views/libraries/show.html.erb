@@ -17,7 +17,7 @@
 	  <div class="span3 ">
   		<div class="well sub_topics" style="padding:5px">
 		  <ul class="fonts-sitemap">
-		    <% @library.library_topics.order(:position).each do |topic| %>
+		    <% @library.library_topics.each do |topic| %>
 			  <li><%= link_to topic.title, library_library_topic_path(@library, topic)+".json", :remote => true, :value => 'jdtest' %></li>
 		    <% end %>	
 		  </ul>

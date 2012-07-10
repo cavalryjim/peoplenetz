@@ -10,7 +10,7 @@
 #
 
 class Library < ActiveRecord::Base
-  has_many :library_topics
+  has_many :library_topics, :dependent => :destroy, :order => 'position'
   
   attr_accessible :description, :name
   

@@ -11,7 +11,7 @@
 #
 
 class Solution < ActiveRecord::Base
-  has_many :solution_topics
+  has_many :solution_topics, :dependent => :destroy, :order => 'position'
   
   attr_accessible :description, :name, :pnetz_solution
 

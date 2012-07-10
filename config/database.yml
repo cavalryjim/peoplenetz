@@ -15,7 +15,7 @@ development:
   database: peoplenetz_development
   pool: 5
   username: peoplene_web
-  password:
+  password: 63hookem05?
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and

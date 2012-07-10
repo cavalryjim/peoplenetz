@@ -11,7 +11,7 @@
 #
 
 class Industry < ActiveRecord::Base
-  has_many :industry_topics
+  has_many :industry_topics, :dependent => :destroy, :order => 'position'
   
   attr_accessible :description, :name, :pnetz_response
   

@@ -17,7 +17,7 @@
 	  <div class="span3 ">
   		<div class="well sub_topics" style="padding:5px">
 		  <ul class="fonts-sitemap">
-		    <% @solution.solution_topics.order(:position).each do |topic| %>
+		    <% @solution.solution_topics.each do |topic| %>
 			  <li><%= link_to topic.title, solution_solution_topic_path(@solution, topic)+".json", :remote => true, :value => 'jdtest' %></li>
 		    <% end %>	
 		  </ul>
