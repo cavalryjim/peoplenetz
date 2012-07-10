@@ -14,8 +14,8 @@ development:
   reconnect: false
   database: peoplenetz_development
   pool: 5
-  username: peoplene_web
-  password: 63hookem05?
+  username: peoplenetz
+  password: password
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
