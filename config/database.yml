@@ -11,12 +11,13 @@
 development:
   adapter: mysql2
   encoding: utf8
+  host: localhost
   reconnect: true
   database: peoplene_web
   pool: 5
   username: peoplene_user
   password: 63hookem05?
-  socket: /tmp/mysqld.sock
+  socket: /var/lib/mysql/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -34,9 +35,10 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
+  host: localhost
   reconnect: true
   database: peoplene_web
   pool: 5
   username: peoplene_user
   password: 63hookem05?
-  socket: /tmp/mysql.sock
+  socket: /var/lib/mysql/mysqld.sock
