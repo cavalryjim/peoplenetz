@@ -17,7 +17,7 @@ development:
   pool: 5
   username: peoplene_user
   password: 63hookem05?
-  socket: /var/lib/mysql/mysqld.sock
+  socket: /var/lib/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -41,4 +41,4 @@ production:
   pool: 5
   username: peoplene_user
   password: 63hookem05?
-  socket: /var/lib/mysql/mysqld.sock
+  socket: /var/lib/mysql/mysql.sock
