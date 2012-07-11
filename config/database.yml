@@ -11,10 +11,10 @@
 development:
   adapter: mysql2
   encoding: utf8
-  reconnect: false
-  database: peoplenetz_development
+  reconnect: true
+  database: peoplene_web
   pool: 5
-  username: peoplenetz
+  username: peoplene_user
   password: 63hookem05?
   socket: /tmp/mysqld.sock
 
@@ -25,9 +25,9 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: peoplenetz_test
+  database: peoplene_web
   pool: 5
-  username: peoplene_web
+  username: peoplene_user
   password:
   socket: /var/run/mysqld/mysqld.sock
 
@@ -37,6 +37,6 @@ production:
   reconnect: true
   database: peoplene_web
   pool: 5
-  username: peoplene_web
+  username: peoplene_user
   password: 63hookem05?
   socket: /tmp/mysql.sock
