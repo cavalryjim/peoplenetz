@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @contact }
+      format.json { render :json => @contact }
     end
   end
   
@@ -19,11 +19,11 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.save
         NotificationsMailer.new_inquiry(@contact).deliver
-        format.html { redirect_to new_contact_path, notice: 'Your inquiry was successfully submitted.' }
-        format.json { render json: @contact, status: :created, location: @contact }
+        format.html { redirect_to new_contact_path, :notice => 'Your inquiry was successfully submitted.' }
+        format.json { render :json => @contact, :status => :created, :location => @contact }
       else
         format.html { render action: "new" }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
+        format.json { render :json => @contact.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -36,7 +36,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @contacts }
+      format.json { render :json => @contacts }
     end
   end
 
@@ -47,7 +47,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @contact }
+      format.json { render :json => @contact }
     end
   end
 
@@ -69,7 +69,7 @@ class ContactsController < ApplicationController
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @contact.errors, status: :unprocessable_entity }
+        format.json { render :json => @contact.errors, :status => :unprocessable_entity }
       end
     end
   end
