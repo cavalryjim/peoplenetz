@@ -4,6 +4,6 @@ class NotificationsMailer < ActionMailer::Base
   def new_inquiry(contact)
     @contact = contact
 
-    mail(:to => "jdavis@peoplenetz.com, bharrison@peoplenetz.com, sales@peoplenetz.com", :subject => 'Peoplenetz: Information Request')
+    mail(to: => "jdavis@peoplenetz.com, bharrison@peoplenetz.com, sales@peoplenetz.com", subject: => 'Peoplenetz: Information Request')
   end
 end
