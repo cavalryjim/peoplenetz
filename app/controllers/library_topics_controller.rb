@@ -48,7 +48,7 @@ class LibraryTopicsController < ApplicationController
         format.html { redirect_to @library_topic, :notice => 'Library topic was successfully created.' }
         format.json { render :json => @library_topic, :status => :created, :location => @library_topic }
       else
-        format.html { render action: "new" }
+        format.html { render :action => "new" }
         format.json { render :json => @library_topic.errors, :status => :unprocessable_entity }
       end
     end
@@ -64,7 +64,7 @@ class LibraryTopicsController < ApplicationController
         format.html { redirect_to @library_topic, :notice => 'Library topic was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        format.html { render :action => "edit" }
         format.json { render :json => @library_topic.errors, :status => :unprocessable_entity }
       end
     end
