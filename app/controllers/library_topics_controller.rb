@@ -6,7 +6,7 @@ class LibraryTopicsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @library_topics }
+      format.json { render :json => @library_topics }
     end
   end
 
@@ -18,7 +18,7 @@ class LibraryTopicsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @library_topic.content }
+      format.json { render :json => @library_topic.content }
     end
   end
 
@@ -29,7 +29,7 @@ class LibraryTopicsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @library_topic }
+      format.json { render :json => @library_topic }
     end
   end
 
@@ -45,11 +45,11 @@ class LibraryTopicsController < ApplicationController
 
     respond_to do |format|
       if @library_topic.save
-        format.html { redirect_to @library_topic, notice: 'Library topic was successfully created.' }
-        format.json { render json: @library_topic, status: :created, location: @library_topic }
+        format.html { redirect_to @library_topic, :notice => 'Library topic was successfully created.' }
+        format.json { render :json => @library_topic, :status => :created, :location => @library_topic }
       else
         format.html { render action: "new" }
-        format.json { render json: @library_topic.errors, status: :unprocessable_entity }
+        format.json { render :json => @library_topic.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -61,11 +61,11 @@ class LibraryTopicsController < ApplicationController
 
     respond_to do |format|
       if @library_topic.update_attributes(params[:library_topic])
-        format.html { redirect_to @library_topic, notice: 'Library topic was successfully updated.' }
+        format.html { redirect_to @library_topic, :notice => 'Library topic was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @library_topic.errors, status: :unprocessable_entity }
+        format.json { render :json => @library_topic.errors, :status => :unprocessable_entity }
       end
     end
   end

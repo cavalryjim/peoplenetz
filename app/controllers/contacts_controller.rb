@@ -22,7 +22,7 @@ class ContactsController < ApplicationController
         format.html { redirect_to new_contact_path, :notice => 'Your inquiry was successfully submitted.' }
         format.json { render :json => @contact, :status => :created, :location => @contact }
       else
-        format.html { render action: "new" }
+        format.html { render :action => "new" }
         format.json { render :json => @contact.errors, :status => :unprocessable_entity }
       end
     end
