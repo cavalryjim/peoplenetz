@@ -7,7 +7,7 @@ class CasesController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @case }
+      format.json { render :json @case }
     end
   end
 
@@ -18,7 +18,7 @@ class CasesController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @case }
+      format.json { render :json @case }
     end
   end
 
@@ -36,10 +36,10 @@ class CasesController < ApplicationController
       if @case.save
         #send_file('http://localhost:3000/documents/case.pdf')
         format.html { redirect_to edit_case_path(@case), notice: 'Case was successfully created.' }
-        format.json { render json: @case, status: :created, location: @case }
+        format.json { render :json @case, status: :created, location: @case }
       else
         format.html { render action: "new" }
-        format.json { render json: @case.errors, status: :unprocessable_entity }
+        format.json { render :json @case.errors, status: :unprocessable_entity }
       end
     end
   end
