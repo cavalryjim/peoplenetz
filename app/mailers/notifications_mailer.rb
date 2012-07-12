@@ -1,5 +1,5 @@
 class NotificationsMailer < ActionMailer::Base
-  default from "website@peoplenetz.com"
+  default :from => "website@peoplenetz.com"
 
   def new_inquiry(contact)
     @contact = contact
