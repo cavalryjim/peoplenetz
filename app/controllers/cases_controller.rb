@@ -36,7 +36,7 @@ class CasesController < ApplicationController
       if @case.save
         #send_file('http://localhost:3000/documents/case.pdf')
         format.html { redirect_to edit_case_path(@case), :notice => 'Case was successfully created.' }
-        format.json { render :json => @case, status: :created, :location => @case }
+        format.json { render :json => @case, :status => :created, :location => @case }
       else
         format.html { render :action => "new" }
         format.json { render :json => @case.errors, :status => :unprocessable_entity }
