@@ -35,11 +35,11 @@ class CasesController < ApplicationController
     respond_to do |format|
       if @case.save
         #send_file('http://localhost:3000/documents/case.pdf')
-        format.html { redirect_to edit_case_path(@case), notice: 'Case was successfully created.' }
-        format.json { render :json => @case, status: :created, location: @case }
+        format.html { redirect_to edit_case_path(@case), :notice => 'Case was successfully created.' }
+        format.json { render :json => @case, status: :created, :location => @case }
       else
-        format.html { render action: "new" }
-        format.json { render :json => @case.errors, status: :unprocessable_entity }
+        format.html { render :action => "new" }
+        format.json { render :json => @case.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -52,11 +52,11 @@ class CasesController < ApplicationController
     respond_to do |format|
       if @case.update_attributes(params[:case])
         #send_file('/documents/case.pdf')
-        format.html { redirect_to edit_case_path(@case), notice: 'Case was successfully updated.' }
+        format.html { redirect_to edit_case_path(@case), :notice => 'Case was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @case.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @case.errors, :status => :unprocessable_entity }
       end
     end
   end
