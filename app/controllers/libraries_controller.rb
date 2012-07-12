@@ -48,7 +48,7 @@ class LibrariesController < ApplicationController
         format.html { redirect_to @library, :notice => 'Library was successfully created.' }
         format.json { render :json => @library, :status => :created, :location => @library }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => :new }
         format.json { render :json => @library.errors, :status => :unprocessable_entity }
       end
     end
@@ -64,7 +64,7 @@ class LibrariesController < ApplicationController
         format.html { redirect_to @library, :notice => 'Library was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => :edit }
         format.json { render :json => @library.errors, :status => :unprocessable_entity }
       end
     end
