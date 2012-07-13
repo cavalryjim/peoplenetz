@@ -27,7 +27,7 @@
   </div> <!-- /container -->
 
   <div id="awesometagline">
-    <a href="#"><%= t "home.headline", default: "Turn insight into business as usual" %></a>
+    <a href="#"><%= t "home.headline", :default => "Turn insight into business as usual" %></a>
   </div>
 </div>
 
@@ -41,7 +41,7 @@
 	      <h2>Assessment</h2>
 		</div>
 		<div class="row">
-	      <p><%= t "home.assessment", default: "Specializ accelerates the assessment of business ideas, product development and customer satisfaction"%> </p>
+	      <p><%= t "home.assessment", :default => "Specializ accelerates the assessment of business ideas, product development and customer satisfaction"%> </p>
 	      <p>
 		    <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
 		  </p>
@@ -56,7 +56,7 @@
 	      <h2>Compliance</h2>
 		</div>
 		<div class="row">
-	      <p><%= t "home.compliance", default: "Our solutions drastically reduce the cost of compliance and risk management functions across functions and business lines" %> </p>
+	      <p><%= t "home.compliance", :default => "Our solutions drastically reduce the cost of compliance and risk management functions across functions and business lines" %> </p>
 	      <p>
 		    <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
 		  </p>
@@ -70,7 +70,7 @@
 	      <h2>Consensus</h2>
 		</div>
 		<div class="row">
-	      <p><%= t "home.consensus", default: "Specializ quickly transforms stakeholder management by guaranteeing organizational consensus on any topic with populations of user as opposed to samples" %></p>
+	      <p><%= t "home.consensus", :default => "Specializ quickly transforms stakeholder management by guaranteeing organizational consensus on any topic with populations of user as opposed to samples" %></p>
 	      <p>
 		    <%= button_to "Learn more &raquo;".html_safe, specializ_path, :class => "btn" %>
 		  </p>
