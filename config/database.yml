@@ -41,4 +41,4 @@ production:
   pool: 5
   username: peoplene_user
   password: 63hookem05?
-  socket: /var/run/mysqld/mysqld.sock
+  socket: /tmp/mysql.sock
