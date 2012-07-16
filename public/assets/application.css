@@ -21,7 +21,6 @@
 	 * background-image:-o-linear-gradient(top, #333, #222);
 	 * background-image:linear-gradient(top, #333, #222);
 	 * background-repeat:repeat-x;
-	 * filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
 	 * -webkit-border-radius:4px;
 	 * -moz-border-radius:4px;
 	 * border-radius:4px;
