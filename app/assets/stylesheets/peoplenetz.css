@@ -145,6 +145,7 @@ h2.pnetz {
 	background-image: none;
 	color: #F5F5F5;
 	box-shadow:none;
+	filter: none;
 }
 
 .navbar-inner .container {
