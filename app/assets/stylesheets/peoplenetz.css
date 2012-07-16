@@ -137,6 +137,8 @@ h2.pnetz {
 
 .navbar {
 	background-color: #1B1B24;
+	background-image: none;
+	filter: none;
 }
 
 /* Navigation Bar */
