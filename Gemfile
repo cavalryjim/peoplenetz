@@ -9,6 +9,8 @@ gem 'copycopter_client', '2.0.1'
 gem 'activeadmin', '~> 0.4.3'
 gem 'formtastic', '~> 2.1.1'
 gem 'recaptcha', :require => 'recaptcha/rails'
+# JDavis: including the most recent version of the twitter-bootstrap-rails gem to fix a production error.
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 group :development do
   gem 'mysql2', '0.3.11'
@@ -29,7 +31,8 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
-  gem 'twitter-bootstrap-rails', '~> 2.0.6' # JDavis: moved from assets group to fix a Heroku error.
+  # JDavis: moving the twitter-bootstrap-rails gem outside of assets to fix a production environment error..
+  #gem 'twitter-bootstrap-rails', '~> 2.0.6' # JDavis: moved from assets group to fix a Heroku error.
   gem 'uglifier', '>= 1.0.3'
 end
 
