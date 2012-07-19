@@ -1,0 +1,74 @@
+# -*- encoding: utf-8 -*-
+
+Gem::Specification.new do |s|
+  s.name = %q{copycopter_client}
+  s.version = "2.0.1"
+
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.authors = ["thoughtbot"]
+  s.date = %q{2012-03-29}
+  s.email = %q{support@thoughtbot.com}
+  s.files = ["features/rails.feature", "features/step_definitions/copycopter_server_steps.rb", "features/step_definitions/rails_steps.rb", "features/support/env.rb", "features/support/rails_server.rb", "spec/copycopter_client/cache_spec.rb", "spec/copycopter_client/client_spec.rb", "spec/copycopter_client/configuration_spec.rb", "spec/copycopter_client/i18n_backend_spec.rb", "spec/copycopter_client/poller_spec.rb", "spec/copycopter_client/prefixed_logger_spec.rb", "spec/copycopter_client/process_guard_spec.rb", "spec/copycopter_client/request_sync_spec.rb", "spec/copycopter_client_spec.rb", "spec/spec_helper.rb", "spec/support/client_spec_helpers.rb", "spec/support/defines_constants.rb", "spec/support/fake_client.rb", "spec/support/fake_copycopter_app.rb", "spec/support/fake_html_safe_string.rb", "spec/support/fake_logger.rb", "spec/support/fake_passenger.rb", "spec/support/fake_resque_job.rb", "spec/support/fake_unicorn.rb", "spec/support/middleware_stack.rb", "spec/support/writing_cache.rb"]
+  s.homepage = %q{http://github.com/copycopter/copycopter-ruby-client}
+  s.require_paths = ["lib"]
+  s.rubygems_version = %q{1.6.2}
+  s.summary = %q{Client for the Copycopter copy management service}
+  s.test_files = ["features/rails.feature", "features/step_definitions/copycopter_server_steps.rb", "features/step_definitions/rails_steps.rb", "features/support/env.rb", "features/support/rails_server.rb", "spec/copycopter_client/cache_spec.rb", "spec/copycopter_client/client_spec.rb", "spec/copycopter_client/configuration_spec.rb", "spec/copycopter_client/i18n_backend_spec.rb", "spec/copycopter_client/poller_spec.rb", "spec/copycopter_client/prefixed_logger_spec.rb", "spec/copycopter_client/process_guard_spec.rb", "spec/copycopter_client/request_sync_spec.rb", "spec/copycopter_client_spec.rb", "spec/spec_helper.rb", "spec/support/client_spec_helpers.rb", "spec/support/defines_constants.rb", "spec/support/fake_client.rb", "spec/support/fake_copycopter_app.rb", "spec/support/fake_html_safe_string.rb", "spec/support/fake_logger.rb", "spec/support/fake_passenger.rb", "spec/support/fake_resque_job.rb", "spec/support/fake_unicorn.rb", "spec/support/middleware_stack.rb", "spec/support/writing_cache.rb"]
+
+  if s.respond_to? :specification_version then
+    s.specification_version = 3
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<i18n>, [">= 0.5.0"])
+      s.add_runtime_dependency(%q<json>, [">= 0"])
+      s.add_development_dependency(%q<appraisal>, ["~> 0.4"])
+      s.add_development_dependency(%q<aruba>, ["~> 0.3.2"])
+      s.add_development_dependency(%q<bourne>, [">= 0"])
+      s.add_development_dependency(%q<cucumber>, ["~> 0.10.0"])
+      s.add_development_dependency(%q<i18n>, [">= 0"])
+      s.add_development_dependency(%q<rails>, ["~> 3.1.0"])
+      s.add_development_dependency(%q<rake>, ["= 0.9.2"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.3"])
+      s.add_development_dependency(%q<sham_rack>, [">= 0"])
+      s.add_development_dependency(%q<sinatra>, [">= 0"])
+      s.add_development_dependency(%q<sqlite3-ruby>, [">= 0"])
+      s.add_development_dependency(%q<thin>, [">= 0"])
+      s.add_development_dependency(%q<webmock>, [">= 0"])
+      s.add_development_dependency(%q<yard>, [">= 0"])
+    else
+      s.add_dependency(%q<i18n>, [">= 0.5.0"])
+      s.add_dependency(%q<json>, [">= 0"])
+      s.add_dependency(%q<appraisal>, ["~> 0.4"])
+      s.add_dependency(%q<aruba>, ["~> 0.3.2"])
+      s.add_dependency(%q<bourne>, [">= 0"])
+      s.add_dependency(%q<cucumber>, ["~> 0.10.0"])
+      s.add_dependency(%q<i18n>, [">= 0"])
+      s.add_dependency(%q<rails>, ["~> 3.1.0"])
+      s.add_dependency(%q<rake>, ["= 0.9.2"])
+      s.add_dependency(%q<rspec>, ["~> 2.3"])
+      s.add_dependency(%q<sham_rack>, [">= 0"])
+      s.add_dependency(%q<sinatra>, [">= 0"])
+      s.add_dependency(%q<sqlite3-ruby>, [">= 0"])
+      s.add_dependency(%q<thin>, [">= 0"])
+      s.add_dependency(%q<webmock>, [">= 0"])
+      s.add_dependency(%q<yard>, [">= 0"])
+    end
+  else
+    s.add_dependency(%q<i18n>, [">= 0.5.0"])
+    s.add_dependency(%q<json>, [">= 0"])
+    s.add_dependency(%q<appraisal>, ["~> 0.4"])
+    s.add_dependency(%q<aruba>, ["~> 0.3.2"])
+    s.add_dependency(%q<bourne>, [">= 0"])
+    s.add_dependency(%q<cucumber>, ["~> 0.10.0"])
+    s.add_dependency(%q<i18n>, [">= 0"])
+    s.add_dependency(%q<rails>, ["~> 3.1.0"])
+    s.add_dependency(%q<rake>, ["= 0.9.2"])
+    s.add_dependency(%q<rspec>, ["~> 2.3"])
+    s.add_dependency(%q<sham_rack>, [">= 0"])
+    s.add_dependency(%q<sinatra>, [">= 0"])
+    s.add_dependency(%q<sqlite3-ruby>, [">= 0"])
+    s.add_dependency(%q<thin>, [">= 0"])
+    s.add_dependency(%q<webmock>, [">= 0"])
+    s.add_dependency(%q<yard>, [">= 0"])
+  end
+end

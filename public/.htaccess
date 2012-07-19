@@ -1,0 +1,7 @@
+PassengerEnabled On
+PassengerAppRoot /home/peoplene/peoplenetz
+
+RewriteRule ^$ index.html [QSA]
+RewriteRule ^([^.]+)$ $1.html [QSA]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ dispatch.cgi [QSA,L]
