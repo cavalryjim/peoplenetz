@@ -1,0 +1,23 @@
+<employee>
+<id></id>
+<departments>
+	<department></department>
+</departments>
+<username></username>
+<firstName></firstName>
+<middleName></middleName>
+<lastName></lastName>
+<country></country>
+<address1></address1>
+<address2></address2>
+<city></city>
+<state></state>
+<postalCode></postalCode>
+<email></email>
+<workPhone></workPhone>
+<workPhoneExtension></workPhoneExtension>
+<photo></photo>
+<language></language>
+<locale></locale>
+<timezone></timezone>
+</employee>
