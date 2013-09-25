@@ -10,7 +10,9 @@ gem 'activeadmin', '~> 0.4.3'
 gem 'formtastic', '~> 2.1.1'
 gem 'recaptcha', :require => 'recaptcha/rails'
 # JDavis: including the most recent version of the twitter-bootstrap-rails gem to fix a production error.
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails'
+#gem 'pg', '0.12.2'
+
 
 group :development do
   gem 'mysql2', '0.3.11'
@@ -41,9 +43,10 @@ group :test do
 end
 
 
-# group :production do
-  # gem 'pg', '0.12.2'
-# end
+group :production do
+  gem 'pg'
+  gem 'activerecord-postgresql-adapter'
+end
 
 
 

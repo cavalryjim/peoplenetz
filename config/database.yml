@@ -15,8 +15,8 @@ development:
   reconnect: true
   database: peoplene_web
   pool: 5
-  username: peoplene_user
-  password: 63hookem05?
+  username: root
+  password: ap1194
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -28,8 +28,8 @@ test:
   reconnect: false
   database: peoplene_web
   pool: 5
-  username: peoplene_user
-  password:
+  username: root
+  password: ap1194
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -40,5 +40,5 @@ production:
   database: peoplene_web
   pool: 5
   username: peoplene_user
-  password: 63hookem05?
+  password: password
   socket: /tmp/mysql.sock
